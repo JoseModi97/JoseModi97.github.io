@@ -9,7 +9,7 @@ pin: true
 math: true
 mermaid: true
 image:
-  path: https://github.com/JoseModi97/images/blob/main/devices-mockup.png
+  path: https://github.com/JoseModi97/images/blob/main/devices-mockup.png?raw=true
   lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
   alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
@@ -187,8 +187,8 @@ Praesent maximus aliquam sapien. Sed vel neque in dolor pulvinar auctor. Maecena
 
 The image below will toggle dark/light mode based on theme preference, notice it has shadows.
 
-![light mode only](https://github.com/JoseModi97/images/blob/main/devtools-dark.png){: .light .w-75 .shadow .rounded-10 w='1212' h='668' }
-![dark mode only](https://github.com/JoseModi97/images/blob/main/devtools-light.png){: .dark .w-75 .shadow .rounded-10 w='1212' h='668' }
+![light mode only](https://raw.githubusercontent.com/JoseModi97/images/main/pages-source-light.png){: .light .w-75 .shadow .rounded-10 w='1212' h='668' }
+![dark mode only](https://raw.githubusercontent.com/JoseModi97/images/main/pages-source-dark.png){: .dark .w-75 .shadow .rounded-10 w='1212' h='668' }
 
 ## Video
 
