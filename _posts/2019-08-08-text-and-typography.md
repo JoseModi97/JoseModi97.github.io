@@ -196,7 +196,7 @@ The image below will toggle dark/light mode based on theme preference, notice it
 
 ## Video
 
-{% include embed/spotify.html id='uXwnPIelDJI' %}
+{% include embed/youtube.html id='uXwnPIelDJI' %}
 
 ## Reverse Footnote
 
