@@ -28,3 +28,9 @@ I am an experienced System Developer currently working at the University of Nair
 **Bachelor of Science in Information Technology**  
 **Jomo Kenyatta University of Agriculture and Technology**, Nairobi, Kenya  
 *September 7, 2021 - December 5, 2023*
+
+
+## Slider
+  {% include carousel.html height="50" unit="%" duration="7" number="1" %}
+
+  {% include carousel.html height="50" unit="%" duration="7" number="2" %}
