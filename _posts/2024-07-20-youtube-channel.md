@@ -3,8 +3,8 @@ title: My Youtube Channel
 description: This channel is dedicated to an array of content that appeals to mostly american viewers
 author: Joseph Modi
 date: 2024-07-20 11:33:00 +0300
-categories: [Blogging, Demo]
-tags: [typography]
+categories: [Youtube, Channel]
+tags: [youtube]
 pin: true
 math: true
 mermaid: true
