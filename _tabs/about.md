@@ -7,7 +7,7 @@ carousels:
     - image: https://raw.githubusercontent.com/JoseModi97/images/main/Flare.jpg
     - image: https://raw.githubusercontent.com/JoseModi97/images/main/Cyber.jpg
     - image: https://raw.githubusercontent.com/JoseModi97/images/main/AI.jpg
-    - image: https://github.com/JoseModi97/images/blob/main/devtools-dark.png?raw=true
+    - image: https://raw.githubusercontent.com/JoseModi97/images/main/Future.jpg
 ---
 
 {% include carousel.html height="50" unit="%" duration="3" number="1" %}
