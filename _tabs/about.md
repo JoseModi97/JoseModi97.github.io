@@ -8,11 +8,6 @@ carousels:
     - image: https://github.com/JoseModi97/images/blob/main/devices-mockup.png?raw=true
     - image: https://raw.githubusercontent.com/JoseModi97/images/main/devices-mockup.png
     - image: https://github.com/JoseModi97/images/blob/main/devtools-dark.png?raw=true
-  - images: 
-    - image: https://raw.githubusercontent.com/JoseModi97/images/main/devtools-light.png
-    - image: https://raw.githubusercontent.com/JoseModi97/images/main/mockup.png
-    - image: https://github.com/JoseModi97/images/blob/main/pages-source-dark.png?raw=true
-    - image: https://github.com/JoseModi97/images/blob/main/pages-source-light.png?raw=true
 ---
 
 {% include carousel.html height="50" unit="%" duration="3" number="1" %}
