@@ -4,7 +4,7 @@ description: A blog post on how to implement 2 factor authentication using yii
 author: modi
 date: 2024-08-04 08:56:00 +0800
 categories: [Yiiframework, 2FA]
-tags: [yii]
+tags: [php]
 pin: true
 math: true
 mermaid: true
