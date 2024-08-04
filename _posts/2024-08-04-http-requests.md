@@ -2,7 +2,7 @@
 title: HTTP Requests
 description: A Comprehensive Guide to Making HTTP Requests with jQuery
 author: modi
-date: 2024-08-04 08:56:00 +0800
+date: 2024-08-04 17:05:00 +0800
 categories: [Jquery, Http]
 tags: [web]
 pin: true
