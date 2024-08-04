@@ -206,5 +206,5 @@ class TwofaForm extends \yii\base\Model
 }
 ```
 
-### Conclusion
+## Conclusion
 Implementing Two-Factor Authentication in Yii2 adds a vital layer of security to your application. By following the steps outlined above, you can enhance user trust and protect sensitive data from unauthorized access. Security is an ongoing process, and incorporating 2FA is a significant step towards making your application more resilient against threats.
