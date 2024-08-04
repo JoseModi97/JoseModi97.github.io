@@ -2,7 +2,7 @@
 title: My Youtube Channel
 description: A blog post about my youtube channel
 author: cotes
-date: 2024-07-20 11:33:00 +0800
+date:  +0800
 categories: [Youtube, Channel]
 tags: [typography]
 pin: true
