@@ -5,7 +5,7 @@ author: modi
 date: 2024-08-04 08:56:00 +0800
 categories: [Yiiframework, 2FA]
 tags: [php]
-pin: true
+pin: false
 math: true
 mermaid: true
 image:

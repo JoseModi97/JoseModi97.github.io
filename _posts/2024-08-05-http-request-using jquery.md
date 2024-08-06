@@ -5,7 +5,7 @@ author: modi
 date: 2024-08-05 09:51:00 +0800
 categories: [Http, Ajax]
 tags: [jquery]
-pin: true
+pin: false
 math: true
 mermaid: true
 ---
