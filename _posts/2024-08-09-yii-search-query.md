@@ -39,7 +39,6 @@ $subQuery = (new \yii\db\Query())
     ->where(['oas.acad_session_id' => $params['acad_session_id']])
     ->distinct();
 ```
-
 ## Building the Main Query
 The main query executes aggregations on the subquery results, providing insights into the number of male and female students per program:
 
