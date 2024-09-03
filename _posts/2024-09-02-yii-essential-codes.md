@@ -19,6 +19,7 @@ $dataProvider->query->createCommand()->getRawSql()
 ## Sample Kartik GridView
 
 ```php
+use kartik\grid\GridView;
 <?= GridView::widget([
     'dataProvider' => $dataProvider,
     'showPageSummary' => true,
