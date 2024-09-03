@@ -143,7 +143,7 @@ use kartik\grid\GridView;
 
 
 
-## Controller Example
+## Search Model Example
 
 ```php
 <?php
