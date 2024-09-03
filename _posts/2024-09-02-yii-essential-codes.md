@@ -87,7 +87,7 @@ use kartik\grid\GridView;
             ],
             ],
             'panel' => [
-                'type' => GridView::BS_HIDDEN_SM
+                'heading' => 'Sample Panel Heading'
             ],
             'showFooter' => true,
             'export' => ['fontAwesome' => true],
