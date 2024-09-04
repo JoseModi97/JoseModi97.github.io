@@ -11,6 +11,11 @@ mermaid: true
 ---
 
 
+## Yii2 Fetch username / user field
+```php
+Yii::$app->user->identity->username
+```
+
 ## Advanced Ternary Operator in php
 ```php
 $panelHeader .= ($gender == 'M') ? 'MALE' : (($gender == 'F') ? 'FEMALE' : 'UNKNOWN');
