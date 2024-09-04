@@ -10,6 +10,10 @@ math: true
 mermaid: true
 ---
 
+## Yii2 Create Raw Sql from Yii2 $dataProvider
+```php
+$dataProvider->query->createCommand()->getRawSql()
+```
 
 ## Yii2 Fetch username / user field
 ```php
@@ -19,11 +23,6 @@ Yii::$app->user->identity->username
 ## Yii2 Advanced Ternary Operator in php
 ```php
 $panelHeader .= ($gender == 'M') ? 'MALE' : (($gender == 'F') ? 'FEMALE' : 'UNKNOWN');
-```
-
-## Yii2 Create Raw Sql from Yii2 $dataProvider
-```php
-$dataProvider->query->createCommand()->getRawSql()
 ```
 
 
