@@ -16,18 +16,18 @@ mermaid: true
 Yii::$app->user->identity->username
 ```
 
-## Advanced Ternary Operator in php
+## Yii2 Advanced Ternary Operator in php
 ```php
 $panelHeader .= ($gender == 'M') ? 'MALE' : (($gender == 'F') ? 'FEMALE' : 'UNKNOWN');
 ```
 
-## Create Raw Sql from Yii2 $dataProvider
+## Yii2 Create Raw Sql from Yii2 $dataProvider
 ```php
 $dataProvider->query->createCommand()->getRawSql()
 ```
 
 
-## Sample Kartik GridView
+## Yii2 Sample Kartik GridView
 
 ```php
 use kartik\grid\GridView;
@@ -154,7 +154,7 @@ use kartik\grid\GridView;
 
 
 
-## Search Model Example
+## Yii2 Search Model Example
 
 ```php
 <?php
