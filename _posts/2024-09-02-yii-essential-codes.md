@@ -10,6 +10,12 @@ math: true
 mermaid: true
 ---
 
+
+## Advanced Ternary Operator in php
+```php
+$panelHeader .= ($gender == 'M') ? 'MALE' : (($gender == 'F') ? 'FEMALE' : 'UNKNOWN');
+```
+
 ## Create Raw Sql from Yii2 $dataProvider
 ```php
 $dataProvider->query->createCommand()->getRawSql()
