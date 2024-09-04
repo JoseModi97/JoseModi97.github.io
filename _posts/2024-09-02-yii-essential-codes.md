@@ -795,7 +795,7 @@ class CoursesRegisteredSearch extends CrProgCurrTimetable
 
 ```
 
-## Controller Example
+## Yii2 Controller Example
 ```php
 <?php
 
