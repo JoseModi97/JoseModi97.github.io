@@ -10,6 +10,40 @@ math: true
 mermaid: true
 ---
 
+## Advanced Yii2 GridView Filtering
+### Concatenating course_code and course_name
+1. Fetch Data from dataProvider: Extract the necessary data from the dataProvider and concatenate the course_code and course_name.
+
+2. Prepare Filter Options: Use ArrayHelper::map() to create the filter options with the concatenated values.
+
+```php
+// Inside your view or wherever you have access to $dataProvider
+$data = $dataProvider->getModels(); // Fetch models from dataProvider
+
+// Prepare unique course codes and names with concatenation
+$filterData = [];
+foreach ($data as $model) {
+    $filterData[$model['course_code']] = $model['course_code'] . ' - ' . $model['course_name'];
+}
+
+// Use $filterData in GridView configuration
+[
+    'attribute' => 'course_code',
+    'label' => 'Course',
+    'value' => function ($model) {
+        return $model['course_code'] . ' - ' . $model['course_name'];
+    },
+    'filterType' => GridView::FILTER_SELECT2,
+    'filter' => $filterData, // Use concatenated values here
+    'filterWidgetOptions' => [
+        'pluginOptions' => ['allowClear' => true],
+    ],
+    'filterInputOptions' => ['placeholder' => 'Any Course'],
+    'format' => 'raw',
+],
+
+```
+
 ## Yii2 Create Raw Sql from Yii2 $dataProvider
 ```php
 $dataProvider->query->createCommand()->getRawSql()
