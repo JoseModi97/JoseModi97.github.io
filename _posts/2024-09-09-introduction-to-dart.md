@@ -92,16 +92,11 @@ Installing the Dart SDK on Windows is a simple process that can be completed in 
 : Open a command prompt and type "dart --version". This should print the version of the dart sdk you have installed.
 
 
-### Creating a basic Dart program
-
+## Creating a basic Dart program
 Creating a basic program in Dart that prints "Hello World" is a great way to get familiar with the Dart programming language. In this lesson, we will be walking through the steps to create a basic Dart program that prints "Hello World". 
 
-## Step 1: Create a New Dart Project
+Step 1: Create a New Dart Project
+: Once you have installed the Dart SDK, you can create a new Dart project. This can be done using an IDE (Integrated Development Environment) such as Visual Studio Code or IntelliJ, throughout this course we will be using VS Code. Once you have opened VS Code, you can create a new Dart project by selecting the “Open folder” option and select the folder where you want to store your dart program. 
 
-Once you have installed the Dart SDK, you can create a new Dart project. This can be done using an IDE (Integrated Development Environment) such as Visual Studio Code or IntelliJ, throughout this course we will be using VS Code. Once you have opened VS Code, you can create a new Dart project by selecting the “Open folder” option and select the folder where you want to store your dart program. 
-
-
-
-## Step 2: Write the Program
-
-This is a simple dart program that prints Hello World on screen. Most programmers write the Hello World program as their first program.Lets do it!
+Step 2: Write the Program
+: This is a simple dart program that prints Hello World on screen. Most programmers write the Hello World program as their first program.Lets do it!
