@@ -100,3 +100,9 @@ Step 1: Create a New Dart Project
 
 Step 2: Write the Program
 : This is a simple dart program that prints Hello World on screen. Most programmers write the Hello World program as their first program.Lets do it!
+
+```dart
+void main() {
+  print('Hello, World!');
+}
+```
