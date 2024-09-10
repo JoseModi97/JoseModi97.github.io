@@ -106,3 +106,8 @@ void main() {
   print('Hello, World!');
 }
 ```
+
+This code will print the words “Hello World” to the console when the program is run. 
+
+Step 3: Congratulations! 
+: If all went well, you should now have a basic Dart program that prints “Hello World” to the console. Congratulations! You have now created a basic Dart program!
