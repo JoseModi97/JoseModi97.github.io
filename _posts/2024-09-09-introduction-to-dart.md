@@ -79,8 +79,10 @@ There are multiple ways to install a dart sdk on your system. You can install Da
 
 Installing the Dart SDK on Windows is a simple process that can be completed in just a few steps.
 
-- Download the Dart SDK from the official website
-  - Visit the official Dart website [Debian](https://www.debian.org/releases/) or click here (Download page for Dart SDK) to go directly to the download page and download the Dart SDK that is appropriate for your version of Windows.
+- Linux
+  - Supported versions: [Debian](https://www.debian.org/releases/) stable and [Ubuntu](https://wiki.ubuntu.com/Releases) LTS under standard support.
+  - Supported architectures: x64, IA32, ARM64, ARM, RISC-V (RV64GC).
+  - Support for RISC-V is experimental, and is available only in the dev channel.
 
 - Install the Dart SDK
   - Once the download is complete, unzip the file and store it in drive C
