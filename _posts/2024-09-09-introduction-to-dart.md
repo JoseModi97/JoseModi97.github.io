@@ -77,20 +77,28 @@ There are multiple ways to install a dart sdk on your system. You can install Da
 
 ## Installing Dart SDK on windows
 
-Installing the Dart SDK on Windows is a simple process that can be completed in just a few steps.
+- Installing the Dart SDK on Windows is a simple process that can be completed in just a few steps.
+
+Download the Dart SDK from the official website:
+: Visit the official Dart website (www.dart.dev) or click here (Download page for Dart SDK) to go directly to the download page and download the Dart SDK that is appropriate for your version of Windows.
+Install the Dart SDK:
+: Once the download is complete, unzip the file and store it in drive C
+Set the PATH environment variable:
+: Once the installation is complete, you need to set the PATH environment variable so that the Dart SDK can be used from the command line. To do this, open the Control Panel and select "System and Security" then "System". Click the "Advanced system settings" link and then the "Environment Variables" button. In the "System Variables" section, find the "Path" variable and edit it. Add the path to the Dart SDK bin directory (e.g. "C:\dart-sdk-2.4.1\bin") to the end of the existing value.
+Verify the installation:
+: Open a command prompt and type "dart --version". This should print the version of the dart sdk you have installed.
+
+
+### Creating a basic Dart program
+
+Creating a basic program in Dart that prints "Hello World" is a great way to get familiar with the Dart programming language. In this lesson, we will be walking through the steps to create a basic Dart program that prints "Hello World". 
+
+## Step 1: Create a New Dart Project
+
+Once you have installed the Dart SDK, you can create a new Dart project. This can be done using an IDE (Integrated Development Environment) such as Visual Studio Code or IntelliJ, throughout this course we will be using VS Code. Once you have opened VS Code, you can create a new Dart project by selecting the “Open folder” option and select the folder where you want to store your dart program. 
 
 
 
-1. Download the Dart SDK from the official website:
+## Step 2: Write the Program
 
-- Visit the official Dart website (www.dart.dev) or click here (Download page for Dart SDK) to go directly to the download page and download the Dart SDK that is appropriate for your version of Windows.
-2. Install the Dart SDK:
-
-- Once the download is complete, unzip the file and store it in drive C
-3. Set the PATH environment variable:
-
-- Once the installation is complete, you need to set the PATH environment variable so that the Dart SDK can be used from the command line. To do this, open the Control Panel and select "System and Security" then "System". Click the "Advanced system settings" link and then the "Environment Variables" button. In the "System Variables" section, find the "Path" variable and edit it. Add the path to the Dart SDK bin directory (e.g. "C:\dart-sdk-2.4.1\bin") to the end of the existing value.
-
-4. Verify the installation:
-- Open a command prompt and type "dart --version". This should print the version of the dart sdk you have installed.
-
+This is a simple dart program that prints Hello World on screen. Most programmers write the Hello World program as their first program.Lets do it!
