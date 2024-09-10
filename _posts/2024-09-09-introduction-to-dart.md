@@ -62,15 +62,16 @@ There are multiple ways to install a dart sdk on your system. You can install Da
   - Supported architectures: x64, IA32, ARM64
   - Support for ARM64 is experimental, and is available only in the dev channel.
 
-### macOS
-- Supported versions: Latest three major versions. Dart supports the following macOS versions as of November 2022:
-- macOS 11 (Big Sur)
-- macOS 12 (Monterey)
-- macOS 13 (Ventura)
-- Supported architectures: x64, ARM64.
-### Linux
-- Supported versions: [Debian](https://www.debian.org/releases/) stable and [Ubuntu](https://wiki.ubuntu.com/Releases) LTS under standard support.
-- Supported architectures: x64, IA32, ARM64, ARM, RISC-V (RV64GC).
-- Support for RISC-V is experimental, and is available only in the dev channel.
+
+- macOS
+  - Supported versions: Latest three major versions. Dart supports the following macOS versions as of November 2022:
+  - macOS 11 (Big Sur)
+  - macOS 12 (Monterey)
+  - macOS 13 (Ventura)
+  - Supported architectures: x64, ARM64.
+- Linux
+  - Supported versions: [Debian](https://www.debian.org/releases/) stable and [Ubuntu](https://wiki.ubuntu.com/Releases) LTS under standard support.
+  - Supported architectures: x64, IA32, ARM64, ARM, RISC-V (RV64GC).
+  - Support for RISC-V is experimental, and is available only in the dev channel.
 
 
