@@ -32,7 +32,7 @@ Dart is a powerful and versatile language that can be used for a wide range of a
 
 ### Dart Features 
 
-: Dart also has several features that make it easier to learn and use compared to other languages. For example, it has a simple syntax and a flexible type system. It also has built-in support for asynchronous programming, which makes it easier to write code that runs concurrently. Below are interesting things about Dart:
+  Dart also has several features that make it easier to learn and use compared to other languages. For example, it has a simple syntax and a flexible type system. It also has built-in support for asynchronous programming, which makes it easier to write code that runs concurrently. Below are interesting things about Dart:
 
 - Free and open-source.
 - Object-oriented programming language.
