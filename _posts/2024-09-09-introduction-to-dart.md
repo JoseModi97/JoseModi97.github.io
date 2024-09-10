@@ -80,7 +80,7 @@ There are multiple ways to install a dart sdk on your system. You can install Da
 Installing the Dart SDK on Windows is a simple process that can be completed in just a few steps.
 
 1. Download the Dart SDK from the official website
-: Visit the official Dart website [(www.dart.dev)](http://www.dart.dev/) or click here [(Download page for Dart SDK)](https://dart.dev/get-dart/archive) to go directly to the download page and download the Dart SDK that is appropriate for your version of Windows.
+: Visit the official Dart website [www.dart.dev](http://www.dart.dev/) or click here [Download page for Dart SDK](https://dart.dev/get-dart/archive) to go directly to the download page and download the Dart SDK that is appropriate for your version of Windows.
 
 2. Install the Dart SDK
 : Once the download is complete, unzip the file and store it in drive C
