@@ -67,7 +67,8 @@ There are multiple ways to install a dart sdk on your system. You can install Da
 - macOS 13 (Ventura)
 - Supported architectures: x64, ARM64.
 ### Linux
-- Supported versions: Debian stable and Ubuntu LTS under standard support.
+- Supported versions:[Debian](https://www.debian.org/releases/) stable and Ubuntu LTS under standard support.
 - Supported architectures: x64, IA32, ARM64, ARM, RISC-V (RV64GC).
 - Support for RISC-V is experimental, and is available only in the dev channel.
+
 
