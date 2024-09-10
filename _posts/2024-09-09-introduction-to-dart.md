@@ -9,3 +9,11 @@ pin: true
 math: true
 mermaid: true
 ---
+
+
+## Learning Objectives
+
+- To introduce Dart as a modern, object-oriented, and statically typed programming language.
+- To install the Dart SDK and set up Visual Studio Code for Dart development.
+- To understand basic Dart syntax, including variables, data types, and operators.
+- To learn about control flow statements (if, else, switch, loops) in Dart.
