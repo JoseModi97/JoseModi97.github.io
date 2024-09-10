@@ -56,6 +56,7 @@ There are several reasons why learning Dart can be beneficial:
 There are multiple ways to install a dart sdk on your system. You can install Dart on Windows, Mac, and Linux or run it from the browser.
 
 ## System requirements
+
 ### Windows
 - Supported versions: Windows 10 and 11.
 - Supported architectures: x64, IA32, ARM64.
