@@ -75,24 +75,21 @@ There are multiple ways to install a dart sdk on your system. You can install Da
   - Support for RISC-V is experimental, and is available only in the dev channel.
 
 
-### System requirements
+## Installing Dart SDK on windows
 
-- Windows
-  - Supported versions: Windows 10 and 11.
-  - Supported architectures: x64, IA32, ARM64
-  - Support for ARM64 is experimental, and is available only in the dev channel.
+Installing the Dart SDK on Windows is a simple process that can be completed in just a few steps.
 
+1. Download the Dart SDK from the official website
+: Visit the official Dart website https://dart.dev or click here (Download page for Dart SDK) to go directly to the download page and download the Dart SDK that is appropriate for your version of Windows.
 
-- macOS
-  - Supported versions: Latest three major versions. Dart supports the following macOS versions as of November 2022:
-  - macOS 11 (Big Sur)
-  - macOS 12 (Monterey)
-  - macOS 13 (Ventura)
-  - Supported architectures: x64, ARM64.
-- Linux
-  - Supported versions: [Debian](https://www.debian.org/releases/) stable and [Ubuntu](https://wiki.ubuntu.com/Releases) LTS under standard support.
-  - Supported architectures: x64, IA32, ARM64, ARM, RISC-V (RV64GC).
-  - Support for RISC-V is experimental, and is available only in the dev channel.
+2. Install the Dart SDK
+: Once the download is complete, unzip the file and store it in drive C
+
+3. Set the PATH environment variable
+: Once the installation is complete, you need to set the PATH environment variable so that the Dart SDK can be used from the command line. To do this, open the Control Panel and select "System and Security" then "System". Click the "Advanced system settings" link and then the "Environment Variables" button. In the "System Variables" section, find the "Path" variable and edit it. Add the path to the Dart SDK bin directory (e.g. "C:\dart-sdk-2.4.1\bin") to the end of the existing value.
+
+4. Verify the installation
+: Open a command prompt and type "dart --version". This should print the version of the dart sdk you have installed.
 
 
 ## Creating a basic Dart program
