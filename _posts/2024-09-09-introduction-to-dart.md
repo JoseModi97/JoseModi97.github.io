@@ -43,7 +43,7 @@ Dart is a powerful and versatile language that can be used for a wide range of a
 
 ### Why Learn Dart?
 
-: There are several reasons why learning Dart can be beneficial:
+There are several reasons why learning Dart can be beneficial:
 
 - Easy to Learn: Dart has a clean and intuitive syntax, making it easy for beginners to grasp the basics of programming.
 - Fast Development: Dart offers a range of features and tools that enable rapid development, allowing developers to build applications more efficiently.
