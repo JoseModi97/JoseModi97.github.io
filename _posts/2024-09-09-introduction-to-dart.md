@@ -29,3 +29,14 @@ Currently, Dart is one of the most preferred languages to learn. A solid underst
 If you know languages like C, Java, C#, Javascript, etc. Dart will be easy for you. This course covers Dart and flutter from basic to advanced.
 
 Dart is a powerful and versatile language that can be used for a wide range of applications. Whether you're a beginner or an experienced programmer, it's worth taking the time to learn this language. It's sure to become an important part of your development toolkit.
+
+### Dart Features 
+
+: Dart also has several features that make it easier to learn and use compared to other languages. For example, it has a simple syntax and a flexible type system. It also has built-in support for asynchronous programming, which makes it easier to write code that runs concurrently. Below are interesting things about Dart:
+
+- Free and open-source.
+- Object-oriented programming language.
+- Used to develop android, iOS, web, and desktop apps fast.
+- Can compile to either native code or javascript.
+- Offers modern programming features like null safety and asynchronous programming.
+- You can even use Dart for servers and backend.
