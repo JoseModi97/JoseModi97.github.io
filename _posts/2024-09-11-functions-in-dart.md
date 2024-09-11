@@ -84,8 +84,84 @@ This function finds the sum of two numbers. Here, the function accepts two param
 Functions are the block of code that performs a specific task. Here are different types of functions:
 
 - No Parameter And No Return Type[^noparamnoreturn]
-- Parameter And No Return Type
-- No Parameter And Return Type
-- Parameter And Return Type
+- Parameter And No Return Type[^paramnoreturn]
+- No Parameter And Return Type[^noparamreturn]
+- Parameter And Return Type[^paramreturn]
 
 [^noparamnoreturn]: Function With No Parameter And No Return Type
+
+In this function, you do not pass any parameter and expect no return type. Here is an example of it:
+
+printName() is a function which prints name on your screen.
+
+
+```dart
+  // No parameter and no return type
+  void main() {
+    printName();
+  }
+
+  //no parameters and no return type (nothing in parameter list and no return type)
+  void printName() {
+    print("Aron Jackson is a student ");
+  }
+```
+
+[^paramnoreturn]: Function With Parameter And No Return Type
+
+In this function, you do pass the parameter and expect no return type. Here is an example of it:
+
+```dart
+  //Here printFullName is a function  With a parameter and no return type function that takes the name of the parameter
+  void main() {
+    printName("Aron Jackson");
+  }
+
+  // parameters and no return type
+  void printName( String name ) {
+    print("My name is $name ");
+  }
+```
+In this program, printName(String name) is the function which has keyword void. It means it has no return type, and the pair of parentheses is not empty but this time that suggests it to accept a parameter.
+
+[^noparamreturn]: Function With No Parameter And Return Type
+
+In this function, you do not pass any parameter but expect return type. Here is an example of it:
+
+Here InstructorName() is a function which returns Instructor's name. In the entire program, anyone can use this function to find the name of the Instructor
+
+```dart
+// Function to return Instructor's name
+String InstructorName() {
+  return "Allan";
+}
+
+void main() {
+  // Calling the function and storing the result
+  String instructor = InstructorName();
+
+  // Printing the instructor's name
+  print("The Instructor's name is: $instructor");
+}
+```
+In this program, InstructorsName() is the function which has String keyword before function name, means it return String value, and the empty pair of parentheses suggests that there is no parameter that is passed to the function.
+
+[^paramreturn]: Function With Parameter And Return Type
+
+In this function, you do pass the parameter and also expect return type. Here is an example of it:
+
+```dart
+// Function to add two integers and return the result
+int add(int a, int b) {
+  return a + b;
+}
+
+void main() {
+  // Calling the function with two integers
+  int result = add(10, 20);
+  
+  // Printing the result
+  print("The sum of 10 and 20 is: $result");
+}
+```
+In this program, int add(int a, int b) is the function with int as the return type, and the pair of parenthesis has two parameters, i.e., a and b.
