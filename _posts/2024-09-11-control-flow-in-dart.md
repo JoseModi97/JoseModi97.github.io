@@ -34,7 +34,8 @@ Dart provides following types of Decision-making statement.
 
 - If Statement
 
-  -Executes a block of code if a specified condition is true.
+  Executes a block of code if a specified condition is true.
+
 ```dart
 // if statement outputs depending on a certain conditional expression
 void main() {
@@ -47,10 +48,11 @@ void main() {
 ```
 
 
-<!-- If-else Statements
+- If-else Statements
 
-In Dart, the if-else statement is used to execute a block of code based on whether a condition is true or false. Here's the syntax:
+  In Dart, the if-else statement is used to execute a block of code based on whether a condition is true or false. Here's the syntax:
 
+```dart
 void main() {
   var age = 10;
 
@@ -60,11 +62,12 @@ void main() {
     print("Mariam is still too young to vote");
   }
 }
+```
+- If else if Statement
 
-If else if Statement
+  In Dart, the if-else if-else statement allows you to evaluate multiple conditions and execute different blocks of code based on these conditions. Here's the syntax:
 
-In Dart, the if-else if-else statement allows you to evaluate multiple conditions and execute different blocks of code based on these conditions. Here's the syntax:
-
+```dart
 void main() {
   var age = 10;
 
@@ -77,19 +80,17 @@ void main() {
   }
 }
 
+```
 
 
 
 
 
 
+- Switch Case Statement
 
-Switch Case Statement
-
-
-
-In Dart, the switch statement is used to evaluate an expression and execute different blocks of code based on matching cases. The syntax of the switch statement is as follows:
-
+  In Dart, the switch statement is used to evaluate an expression and execute different blocks of code based on matching cases. The syntax of the switch statement is as follows:
+```dart
 void main() {
   int i = 3;
   switch (i) {
@@ -107,74 +108,44 @@ void main() {
       break;
   }
 }
+```
 
 
+- Looping Statements
 
-Looping Statements
+  Dart Loop is used to run a block of code repetitively for a given number of times or until matches the specified condition. Loops are essential tools for any programming language. It is used to iterate the Dart iterable such as list, map, etc. and perform operations for multiple times. A loop can have two parts - a body of the loop and control statements. The main objective of the loop is to run the code multiple times. Dart supports the following type of loops.
+
+  - Dart for loop
+
+  The for loop is used when we know how many times a block of code will execute.
+  ```dart
+  //The for loop is used when we know how many times a block of code will execute
+  void main()  
+  {  
+      int num = 1;  
+      for(num; num<=10; num++)           //for loop to print 1-10 numbers  
+      {  
+          print(num);     //to print the number  
+      }  
+  }  
+  ```
+
+   - Dart for…in loop
+
+  The for..in loop is similar to for loop but different in its syntax. It iterates through an object's properties. The Dart for..in loop accepts an expression as iterator and iterates through the elements one at a time in sequence. The variable var holds the values of the iteration. The for…in will execute until elements remain in iterators.
+
+```dart
+  //The for…in loop is slightly different from the for loop
+  //It only takes dart object or expression as an iterator and iterates the element one at a time.
+
+  void main()  
+  {  
+      var list1 = [10,20,30,40,50];  
+      for(var i in list1)           //for..in loop to print list element  
+      {  
+          print(i);       //to print the number  
+      }  
+  }  
+```
 
 
-
-Dart Loop is used to run a block of code repetitively for a given number of times or until matches the specified condition. Loops are essential tools for any programming language. It is used to iterate the Dart iterable such as list, map, etc. and perform operations for multiple times. A loop can have two parts - a body of the loop and control statements. The main objective of the loop is to run the code multiple times. Dart supports the following type of loops.
-
-Dart for loop
-
-The for loop is used when we know how many times a block of code will execute.
-
-//The for loop is used when we know how many times a block of code will execute
-void main()  
-{  
-    int num = 1;  
-    for(num; num<=10; num++)           //for loop to print 1-10 numbers  
-    {  
-        print(num);     //to print the number  
-    }  
-}  
-
-
-
-Dart for…in loop
-
-The for..in loop is similar to for loop but different in its syntax. It iterates through an object's properties. The Dart for..in loop accepts an expression as iterator and iterates through the elements one at a time in sequence. The variable var holds the values of the iteration. The for…in will execute until elements remain in iterators.
-
-//The for…in loop is slightly different from the for loop
-//It only takes dart object or expression as an iterator and iterates the element one at a time.
-
-void main()  
-{  
-    var list1 = [10,20,30,40,50];  
-    for(var i in list1)           //for..in loop to print list element  
-    {  
-        print(i);       //to print the number  
-    }  
-}  
-Dart while loop
-
-The while loop is used when the number of execution of a block of code is not known. It will execute as long as the condition is true. It initially checks the given condition then executes the statements that are inside the while loop. The while loop is mostly used to create an infinite loop.
-
-void main() {
-  var list1 = [10, 20, 30, 40, 50];
-  int i = 0;            // Initialize index
-
-  while (i < list1.length) {  // Loop until i is less than the length of the list
-    print(list1[i]);          // Print the current element at index i
-    i++;                      // Increment the index
-  }
-}
-
-Dart do-while loop
-
-Dart do while loop executes a block of the statement first and then checks the condition. If the condition returns true, then the loop continues its iteration. It is similar to Dart while loop but the only difference is, in the do-while loop a block of statements inside the body of loop will execute at least once.
-
-//do…while loop is similar to the while loop but only 
-//difference is that, it executes the loop statement and then check the given condition. 
-
-void main()  
-{  
- var a = 1;  
- var maxnum = 10;  
-do  
-    {                
-       print("The value is: ${a}");  
-       a = a+1;                                    
-       }while(a<maxnum);  
-}  -->
