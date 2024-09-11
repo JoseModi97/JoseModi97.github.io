@@ -40,7 +40,7 @@ In this tutorial, you will learn about functions in dart. Functions are the bl
 
 `Parameters`: Parameters are the input to the function, which you can write inside the bracket (). Always follow a lowerCamelCase naming convention for your function parameter.
 
-### Example 1: Function That Prints Name
+### Example 1: Prints Name
 
 This is a simple program that prints name using function. The name of function is printName().
 
@@ -54,5 +54,22 @@ This is a simple program that prints name using function. The name of function i
   void main() {
     // Calling the function
     printName();
+  }
+```
+
+### Example 2: Find Sum of Two Numbers
+
+This function finds the sum of two numbers. Here, the function accepts two parameters. i.e., num1 and num2, and the return type is void.
+
+```dart
+  // Function to find the sum of two numbers
+  void findSum(int num1, int num2) {
+    int sum = num1 + num2;
+    print("The sum of $num1 and $num2 is: $sum");
+  }
+
+  void main() {
+    // Calling the function with two numbers
+    findSum(10, 20);
   }
 ```
