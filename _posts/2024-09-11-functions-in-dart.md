@@ -27,11 +27,11 @@ In this tutorial, you will learn about functions in dart. Functions are the bl
 
 ### Syntax of a function
 ``` bash
-returntype functionName(parameter1,parameter2, ...){
+  returntype functionName(parameter1,parameter2, ...){
 
-// function body
+  // function body
 
-}
+  }
 ```
 
 `Return type`: It tells you the function output type. It can be void, String, int, double, etc. If the function doesn’t return anything, you can use void as the return type.
@@ -39,3 +39,20 @@ returntype functionName(parameter1,parameter2, ...){
 `Function Name`: You can name functions by almost any name. Always follow a lowerCamelCase naming convention like void printName().
 
 `Parameters`: Parameters are the input to the function, which you can write inside the bracket (). Always follow a lowerCamelCase naming convention for your function parameter.
+
+### Example 1: Function That Prints Name
+
+This is a simple program that prints name using function. The name of function is printName().
+
+
+```dart
+  // Function to print name
+  void printName() {
+    print("My name is Mariam");
+  }
+
+  void main() {
+    // Calling the function
+    printName();
+  }
+```
