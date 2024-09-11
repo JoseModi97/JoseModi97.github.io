@@ -88,4 +88,4 @@ Functions are the block of code that performs a specific task. Here are differe
 - No Parameter And Return Type
 - Parameter And Return Type
 
-[^noparamnoreturn]: `No Parameter And No Return Type `
+[^noparamnoreturn]: Function With No Parameter And No Return Type
