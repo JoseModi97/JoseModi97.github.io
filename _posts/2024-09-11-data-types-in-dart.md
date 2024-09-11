@@ -104,3 +104,108 @@ In Dart, boolean holds either true or false value. You can write the bool keyw
 - Is the door open?
 - Does a cat fly?
 - Are you older than your father?
+
+These all are yes/no questions. Its a good idea to store them in boolean.
+
+```dart
+void main() {
+  // this is a true or false statement
+
+  bool isOver18 = true;
+  print(isOver18);
+
+  print(7 < 8);
+}
+```
+
+## Lists
+
+Dart List is similar to an array, which is the ordered collection of the objects. If you want to store multiple values without creating multiple variables, you can use a list.
+
+
+```dart
+void main() {
+  // use square brackets for listing
+  List myList = [1, 2, 4, "Jackson"];
+  // adding value to the list
+
+  myList.add(67);
+  myList.remove("Jackson");
+  // remove value
+  // myList.remove(4);
+  print(myList);
+}
+```
+
+## Maps
+
+A map is a dynamic collection that represents a set of values ​as key-value pairs. Keys and values ​in the
+
+map can be of any type.
+
+```dart
+void main() {
+  // Creating a Map with String keys and int values
+  Map<String, int> ages = {
+    'Alice': 30,
+    'Bob': 25,
+    'Charlie': 35,
+  };
+  print("Ages of students: $ages");
+}
+```
+
+
+
+## Runes
+
+A rune can be defined as an integer used to represent any Unicode code point. As a Dart string is a simple sequence of UTF-16 code units, 32-bit Unicode values in a string are represented using a special syntax.
+
+
+```dart
+void main( )
+{
+ var heart_symbol = '\u2665'; 
+var laugh_symbol = '\u{1f800}';
+ print(heart_symbol);
+ print(laugh_symbol);
+ }
+```
+
+
+## Arithmetic Operations using Numbers
+
+Arithmetic operators are the most common types of operators. They perform operations like addition, subtraction, multiplication, division.
+
+```dart
+void main() {
+  // Declaring integer and double variables
+  int a = 10;
+  int b = 3;
+  double x = 5.5;
+  double y = 2.5;
+
+  // Performing arithmetic operations
+  int addition = a + b;            // Addition
+  int subtraction = a - b;         // Subtraction
+  int multiplication = a * b;      // Multiplication
+  double division = a / b;         // Division (returns a double)
+  int integerDivision = a ~/ b;    // Integer Division (returns an int)
+  int modulus = a % b;             // Modulus (remainder of division)
+
+  // Using double variables
+  double doubleAddition = x + y;
+  double doubleMultiplication = x * y;
+
+  // Printing results
+  print('Addition (int): $a + $b = $addition');
+  print('Subtraction (int): $a - $b = $subtraction');
+  print('Multiplication (int): $a * $b = $multiplication');
+  print('Division (double): $a / $b = $division');
+  print('Integer Division: $a ~/ $b = $integerDivision');
+  print('Modulus: $a % $b = $modulus');
+
+  print('Addition (double): $x + $y = $doubleAddition');
+  print('Multiplication (double): $x * $y = $doubleMultiplication');
+}
+```
