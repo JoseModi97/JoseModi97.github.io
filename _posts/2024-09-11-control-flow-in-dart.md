@@ -149,3 +149,41 @@ void main() {
   ```
 
 
+   - Dart while loop
+
+  The while loop is used when the number of execution of a block of code is not known. It will execute as long as the condition is true. It initially checks the given condition then executes the statements that are inside the while loop. The while loop is mostly used to create an infinite loop.
+
+  ```dart
+  void main() {
+  var list1 = [10, 20, 30, 40, 50];
+  int i = 0;            // Initialize index
+
+  while (i < list1.length) {  // Loop until i is less than the length of the list
+    print(list1[i]);          // Print the current element at index i
+    i++;                      // Increment the index
+  }
+  }
+  ```
+
+
+   - Dart do-while loop
+
+  Dart do while loop executes a block of the statement first and then checks the condition. If the condition returns true, then the loop continues its iteration. It is similar to Dart while loop but the only difference is, in the do-while loop a block of statements inside the body of loop will execute at least once.
+
+  ```dart
+    //do…while loop is similar to the while loop but only 
+  //difference is that, it executes the loop statement and then check the given condition. 
+
+  void main()  
+  {  
+  var a = 1;  
+  var maxnum = 10;  
+  do  
+      {                
+        print("The value is: ${a}");  
+        a = a+1;                                    
+        }while(a<maxnum);  
+  } 
+  ```
+
+
