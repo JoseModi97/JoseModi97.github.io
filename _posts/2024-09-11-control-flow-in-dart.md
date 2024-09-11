@@ -193,17 +193,18 @@ Jump statements are used to alter the flow of control in a program by transferri
 2. `continue Statement`: Used to skip the current iteration of a loop and continue with the next iteration.
 3. `return Statement`: Used to exit a function and optionally return a value.
 
-`break Statement`
-----------------
+<!-- `break Statement`
+---------------- -->
 
-```dart
-void main() {
-  for (int i = 0; i < 5; i++) {
-    if (i == 3) {
-      break; // Exit the loop when i equals 3
+- `break statement`
+  ```dart
+  void main() {
+    for (int i = 0; i < 5; i++) {
+      if (i == 3) {
+        break; // Exit the loop when i equals 3
+      }
+      print(i); // Output: 0, 1, 2
     }
-    print(i); // Output: 0, 1, 2
   }
-}
 
-```
+  ```
