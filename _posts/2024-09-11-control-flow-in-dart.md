@@ -4,7 +4,7 @@ description: The control statements or flow of control statements are used t
 author: modi
 date: 2024-09-11 06:11:00 +0800
 categories: [Dart, ControlFlow]
-tags: [dart]
+tags: [dart-intro]
 pin: true
 math: true
 mermaid: true
