@@ -189,9 +189,6 @@ void main() {
 ## Jump Statements
 Jump statements are used to alter the flow of control in a program by transferring the execution to a different part of the code. The main jump statements in Dart are:
 
-1. break Statement:
-: Used to exit a loop (for, while, do-while) or switch statement prematurely.
-2. continue Statement:
-: Used to skip the current iteration of a loop and continue with the next iteration.
-3. return Statement:
-: Used to exit a function and optionally return a value.
+1. `break Statement`: Used to exit a loop (for, while, do-while) or switch statement prematurely.
+2. `continue Statement`: Used to skip the current iteration of a loop and continue with the next iteration.
+3. `return Statement`: Used to exit a function and optionally return a value.
