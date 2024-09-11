@@ -134,18 +134,18 @@ void main() {
 
   The for..in loop is similar to for loop but different in its syntax. It iterates through an object's properties. The Dart for..in loop accepts an expression as iterator and iterates through the elements one at a time in sequence. The variable var holds the values of the iteration. The for…in will execute until elements remain in iterators.
 
-```dart
-  //The for…in loop is slightly different from the for loop
-  //It only takes dart object or expression as an iterator and iterates the element one at a time.
+  ```dart
+    //The for…in loop is slightly different from the for loop
+    //It only takes dart object or expression as an iterator and iterates the element one at a time.
 
-  void main()  
-  {  
-      var list1 = [10,20,30,40,50];  
-      for(var i in list1)           //for..in loop to print list element  
-      {  
-          print(i);       //to print the number  
-      }  
-  }  
-```
+    void main()  
+    {  
+        var list1 = [10,20,30,40,50];  
+        for(var i in list1)           //for..in loop to print list element  
+        {  
+            print(i);       //to print the number  
+        }  
+    }  
+  ```
 
 
