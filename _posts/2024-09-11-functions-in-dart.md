@@ -74,7 +74,7 @@ This function finds the sum of two numbers. Here, the function accepts two param
   }
 ```
 
-### Key Points
+`Key Points`
 - In dart function are also objects.
 - You should follow the lowerCamelCase naming convention while naming function.
 - You should follow the lowerCamelCase naming convention while naming function parameters.
