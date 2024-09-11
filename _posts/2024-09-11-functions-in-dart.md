@@ -83,14 +83,13 @@ This function finds the sum of two numbers. Here, the function accepts two param
 
 Functions are the block of code that performs a specific task. Here are different types of functions:
 
-- No Parameter And No Return Type[^noparamnoreturn]
-- Parameter And No Return Type[^paramnoreturn]
-- No Parameter And Return Type[^noparamreturn]
-- Parameter And Return Type[^paramreturn]
+- No Parameter And No Return Type
+- Parameter And No Return Type
+- No Parameter And Return Type
+- Parameter And Return Type
 
-[^noparamnoreturn]: Function With No Parameter And No Return Type
-
-In this function, you do not pass any parameter and expect no return type. Here is an example of it:
+`Function With No Parameter And No Return Type`
+: In this function, you do not pass any parameter and expect no return type. Here is an example of it:
 
 printName() is a function which prints name on your screen.
 
@@ -107,7 +106,7 @@ printName() is a function which prints name on your screen.
   }
 ```
 
-[^paramnoreturn]: Function With Parameter And No Return Type
+`Function With Parameter And No Return Type`
 
 In this function, you do pass the parameter and expect no return type. Here is an example of it:
 
@@ -124,7 +123,7 @@ In this function, you do pass the parameter and expect no return type. Here is a
 ```
 In this program, printName(String name) is the function which has keyword void. It means it has no return type, and the pair of parentheses is not empty but this time that suggests it to accept a parameter.
 
-[^noparamreturn]: Function With No Parameter And Return Type
+`Function With No Parameter And Return Type`
 
 In this function, you do not pass any parameter but expect return type. Here is an example of it:
 
@@ -146,7 +145,7 @@ void main() {
 ```
 In this program, InstructorsName() is the function which has String keyword before function name, means it return String value, and the empty pair of parentheses suggests that there is no parameter that is passed to the function.
 
-[^paramreturn]: Function With Parameter And Return Type
+`Function With Parameter And Return Type`
 
 In this function, you do pass the parameter and also expect return type. Here is an example of it:
 
