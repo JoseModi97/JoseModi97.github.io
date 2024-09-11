@@ -12,10 +12,15 @@ mermaid: true
 
 ### Learning Objectives
 
-- To understand what Functions are
-- To understand the composition of functions
-- Be able to understand types of functions in Dart
+1. To understand what Functions are
+2. To understand the composition of functions
+3. Be able to understand types of functions in Dart
 
 ### WHAT ARE FUNCTIONS?
 
 : In this tutorial, you will learn about functions in dart. Functions are the block of code that performs a specific task. They are created when some statements are repeatedly occurring in the program. The function helps reusability of the code in the program.
+
+### Function Advantages
+Avoid Code Repetition
+Easy to divide the complex program into smaller parts
+Helps to write a clean code
