@@ -57,7 +57,7 @@ This is a simple program that prints name using function. The name of function i
   }
 ```
 
-### Example 2: Find Sum of Two Numbers
+### Example 2: Sum of Two Numbers
 
 This function finds the sum of two numbers. Here, the function accepts two parameters. i.e., num1 and num2, and the return type is void.
 
