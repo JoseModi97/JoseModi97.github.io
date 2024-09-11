@@ -113,3 +113,9 @@ This code will print the words “Hello World” to the console when the progr
 
 Step 3: Congratulations! 
 : If all went well, you should now have a basic Dart program that prints “Hello World” to the console. Congratulations! You have now created a basic Dart program!
+
+### Variables in Dart
+
+## Understanding Variables in Dart:
+
+Variables are used to store data that can be used and manipulated throughout your program. In Dart, you can declare variables using var, final, or const. The choice depends on whether the variable's value is intended to be mutable or immutable.
