@@ -33,3 +33,9 @@ returntype functionName(parameter1,parameter2, ...){
 
 }
 ```
+
+`Return type`: It tells you the function output type. It can be void, String, int, double, etc. If the function doesn’t return anything, you can use void as the return type.
+
+`Function Name`: You can name functions by almost any name. Always follow a lowerCamelCase naming convention like void printName().
+
+`Parameters`: Parameters are the input to the function, which you can write inside the bracket (). Always follow a lowerCamelCase naming convention for your function parameter.
