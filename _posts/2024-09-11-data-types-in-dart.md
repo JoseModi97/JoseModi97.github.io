@@ -1,6 +1,6 @@
 ---
 title: Data Types in Dart
-description: Dart is an open-source programming language developed by Google
+description: A data type is an attribute of data which tells the compiler or interpreter how the programmer intends to use the data.
 author: modi
 date: 2024-09-11 05:49:00 +0800
 categories: [Dart, DataTypes]
@@ -9,10 +9,6 @@ pin: true
 math: true
 mermaid: true
 ---
-
-## Data Types In Dart
-
-A data type is an attribute of data which tells the compiler or interpreter how the programmer intends to use the data.
 
 Dart supports the following data types:
 

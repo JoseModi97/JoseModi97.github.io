@@ -1,6 +1,6 @@
 ---
 title: Functions in Dart
-description: Dart is an open-source programming language developed by Google
+description: Functions are the block of code that performs a specific task.
 author: modi
 date: 2024-09-11 08:37:00 +0800
 categories: [Dart, Functions]
