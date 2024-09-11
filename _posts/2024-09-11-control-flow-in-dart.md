@@ -196,7 +196,7 @@ Jump statements are used to alter the flow of control in a program by transferri
 <!-- `break Statement`
 ---------------- -->
 
-### `break statement`
+### `break` statement
   ```dart
   void main() {
     for (int i = 0; i < 5; i++) {
@@ -206,5 +206,33 @@ Jump statements are used to alter the flow of control in a program by transferri
       print(i); // Output: 0, 1, 2
     }
   }
+
+  ```
+
+### `continue` statement
+  ```dart
+  void main() {
+  for (int i = 0; i < 5; i++) {
+    if (i == 2) {
+      continue; // Skip the iteration when i equals 2
+      }
+    print(i); // Output: 0, 1, 3, 4
+    }
+  }
+
+
+  ```
+
+  ### `return` statement
+  ```dart
+  int add(int a, int b) {
+  return a + b; // Exit the function and return the sum of a and b
+  }
+
+  void main() {
+    int result = add(5, 3);
+    print(result); // Output: 8
+  }
+
 
   ```
