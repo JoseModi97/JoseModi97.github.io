@@ -111,11 +111,11 @@ void main() {
 ```
 
 
-- Looping Statements
+## Looping Statements
 
   Dart Loop is used to run a block of code repetitively for a given number of times or until matches the specified condition. Loops are essential tools for any programming language. It is used to iterate the Dart iterable such as list, map, etc. and perform operations for multiple times. A loop can have two parts - a body of the loop and control statements. The main objective of the loop is to run the code multiple times. Dart supports the following type of loops.
 
-  - Dart for loop
+- Dart for loop
 
   The for loop is used when we know how many times a block of code will execute.
   ```dart
@@ -130,7 +130,7 @@ void main() {
   }  
   ```
 
-   - Dart for…in loop
+- Dart for…in loop
 
   The for..in loop is similar to for loop but different in its syntax. It iterates through an object's properties. The Dart for..in loop accepts an expression as iterator and iterates through the elements one at a time in sequence. The variable var holds the values of the iteration. The for…in will execute until elements remain in iterators.
 
@@ -149,7 +149,7 @@ void main() {
   ```
 
 
-   - Dart while loop
+- Dart while loop
 
   The while loop is used when the number of execution of a block of code is not known. It will execute as long as the condition is true. It initially checks the given condition then executes the statements that are inside the while loop. The while loop is mostly used to create an infinite loop.
 
@@ -166,7 +166,7 @@ void main() {
   ```
 
 
-   - Dart do-while loop
+- Dart do-while loop
 
   Dart do while loop executes a block of the statement first and then checks the condition. If the condition returns true, then the loop continues its iteration. It is similar to Dart while loop but the only difference is, in the do-while loop a block of statements inside the body of loop will execute at least once.
 
@@ -186,4 +186,12 @@ void main() {
   } 
   ```
 
+## Jump Statements
+Jump statements are used to alter the flow of control in a program by transferring the execution to a different part of the code. The main jump statements in Dart are:
 
+1. break Statement:
+: Used to exit a loop (for, while, do-while) or switch statement prematurely.
+2. continue Statement:
+: Used to skip the current iteration of a loop and continue with the next iteration.
+3. return Statement:
+: Used to exit a function and optionally return a value.
