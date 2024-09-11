@@ -24,3 +24,12 @@ In this tutorial, you will learn about functions in dart. Functions are the bl
 - Avoid Code Repetition
 - Easy to divide the complex program into smaller parts
 - Helps to write a clean code
+
+### Syntax of a function
+``` bash
+returntype functionName(parameter1,parameter2, ...){
+
+// function body
+
+}
+```
