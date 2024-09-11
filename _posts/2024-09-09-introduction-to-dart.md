@@ -3,8 +3,8 @@ title: Introduction To Dart
 description: Dart is an open-source programming language developed by Google
 author: modi
 date: 2024-09-09 16:21:00 +0800
-categories: [Dart, Introduction]
-tags: [chapter1]
+categories: [Dart, DataTypes]
+tags: [dart]
 pin: true
 math: true
 mermaid: true
@@ -114,9 +114,9 @@ This code will print the words “Hello World” to the console when the progr
 Step 3: Congratulations! 
 : If all went well, you should now have a basic Dart program that prints “Hello World” to the console. Congratulations! You have now created a basic Dart program!
 
-### Variables in Dart
+## Variables in Dart
 
-## Understanding Variables in Dart:
+### Understanding Variables in Dart:
 
 Variables are used to store data that can be used and manipulated throughout your program. In Dart, you can declare variables using var, final, or const. The choice depends on whether the variable's value is intended to be mutable or immutable.
 
