@@ -73,3 +73,19 @@ This function finds the sum of two numbers. Here, the function accepts two param
     findSum(10, 20);
   }
 ```
+
+### Key Points
+- In dart function are also objects.
+- You should follow the lowerCamelCase naming convention while naming function.
+- You should follow the lowerCamelCase naming convention while naming function parameters.
+
+### Types Of Functions
+
+Functions are the block of code that performs a specific task. Here are different types of functions:
+
+- No Parameter And No Return Type footnote[^noparam]
+- Parameter And No Return Type
+- No Parameter And Return Type
+- Parameter And Return Type
+
+footnote[^noparam] `No Parameter And No Return Type `
