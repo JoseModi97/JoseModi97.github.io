@@ -83,9 +83,9 @@ This function finds the sum of two numbers. Here, the function accepts two param
 
 Functions are the block of code that performs a specific task. Here are different types of functions:
 
-- No Parameter And No Return Type[^noparam]
+- No Parameter And No Return Type[^noparamnoreturn]
 - Parameter And No Return Type
 - No Parameter And Return Type
 - Parameter And Return Type
 
-[^noparam]: `No Parameter And No Return Type `
+[^noparamnoreturn]: `No Parameter And No Return Type `
