@@ -139,11 +139,9 @@ void main() {
 
 
 
-### Class Declaration:
+Class Declaration
+: The Car class has two properties: brand and model.
+: The constructor Car(this.brand, this.model); initializes these properties.
 
-The Car class has two properties: brand and model.
-The constructor Car(this.brand, this.model); initializes these properties.
-
-Object Creation:
-
-Car myCar = Car('Toyota', 'Corolla'); creates an object myCar of the Car class with specific values for brand and model.
+Object Creation
+: Car myCar = Car('Toyota', 'Corolla'); creates an object myCar of the Car class with specific values for brand and model.
