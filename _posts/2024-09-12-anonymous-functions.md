@@ -15,7 +15,7 @@ In the previous lesson we introduced you to functions that are defined by using 
 ## Syntax 
 Below is the syntax of the anonymous function
 
-```dart
+```bash
 (parameters){
   // body of an anonymous function
 }
