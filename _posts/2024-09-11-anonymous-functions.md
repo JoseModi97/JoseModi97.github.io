@@ -24,3 +24,25 @@ Below is the syntax of the anonymous function
 ### Knowledge Panel:
 - You can assign an anonymous function to a variable
 - You can pass an anonymous function as a parameter / argument
+
+
+## Example 1:
+
+In this example, you will learn to use an anonymous function to print all list items. This function invokes each fruit without having a function name.
+
+```dart
+void main() {
+  // List of fruits
+  var fruits = ['Apple', 'Banana', 'Cherry', 'Date'];
+
+  // Using an anonymous function with forEach to print each fruit
+  fruits.forEach((fruit) {
+    print(fruit);
+  });
+}
+```
+
+### Explanation:
+- var fruits = ['Apple', 'Banana', 'Cherry', 'Date'];: Defines a list of fruits.
+- fruits.forEach((fruit) { ... });: The forEach method is used to iterate over each item in the list. It takes an anonymous function as its argument.
+   - (fruit) { print(fruit); }: This is an anonymous function (a function without a name) that takes one parameter fruit and prints it.
