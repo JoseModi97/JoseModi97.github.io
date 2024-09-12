@@ -55,3 +55,46 @@ In OOP, an object can be anything, such as a person, a bank account, a car, or 
 - OOP can make code more modular, flexible, and extensible.
 - OOP can help you to understand better and solve problems.
 
+
+
+## Classes
+
+In object-oriented programming, a class is a blueprint for creating objects. A class defines the properties and methods that an object will have. For example, a class called Dog might have properties like breed, color and methods like bark, run.
+
+
+
+### Declaring A class in Dart
+
+In Dart programming, you can declare a class using the class keyword followed by the class name. Here's a simple example:
+
+```dart
+// Declaring a class in Dart
+
+class Person {
+
+ // Properties of the class
+
+ String name;
+
+ int age;
+
+ // Constructor
+
+ Person(this.name, this.age);
+
+ // Method to display person details
+
+ void displayInfo() {
+
+  print('Name: $name, Age: $age');
+
+ }
+
+}
+
+```
+Class Declaration
+:The class keyword is used to declare a class, followed by the class name Person.
+
+
+
