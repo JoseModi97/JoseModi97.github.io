@@ -144,4 +144,5 @@ Class Declaration
 : The constructor Car(this.brand, this.model); initializes these properties.
 
 Object Creation
-: Car myCar = Car('Toyota', 'Corolla'); creates an object myCar of the Car class with specific values for brand and model.
+: Car myCar = Car('Toyota', 'Corolla'); 
+: creates an object myCar of the Car class with specific values for brand and model.
