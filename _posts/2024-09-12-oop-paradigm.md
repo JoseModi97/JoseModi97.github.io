@@ -146,3 +146,145 @@ Class Declaration
 Object Creation
 : Car myCar = Car('Toyota', 'Corolla'); 
 : creates an object myCar of the Car class with specific values for brand and model.
+
+
+
+## Object Oriented Programming Paradigm
+
+### Data Encapsulation
+
+Data encapsulation is the process of keeping a class' implementation details hidden from the user through an object's functions.
+
+### How To Achieve Encapsulation In Dart
+
+Encapsulation can be achieved by:
+
+- Declaring the class properties as private by using underscore(_).
+- Providing public getter and setter methods to access and update the value of private property.
+
+
+
+### Getter and Setter Methods
+
+Getter and setter methods are used to access and update the value of private property. Getter methods are used to access the value of private property. Setter methods are used to update the value of private property.
+
+### `Code sample`
+
+```dart
+class Circle {
+  // Private property with underscore (_)
+  double _radius;
+
+  // Constructor to initialize the radius
+  Circle(this._radius);
+
+  // Getter method to access the private radius
+  double get radius => _radius;
+
+  // Setter method to update the radius with validation
+  set radius(double value) {
+    if (value > 0) {
+      _radius = value;
+    } else {
+      print('Radius must be greater than 0');
+    }
+  }
+
+  // Method to calculate area of the circle
+  double calculateArea() {
+    return 3.1416 * _radius * _radius; // Area = πr²
+  }
+}
+
+void main() {
+  // Creating an instance of Circle
+  Circle circle = Circle(5.0);
+
+  // Accessing the radius using getter
+  print("Initial radius: ${circle.radius}");
+
+  // Calculating and printing the area
+  print("Initial area: ${circle.calculateArea()}");
+
+  // Updating the radius using setter
+  circle.radius = 7.0;
+
+  // Accessing updated radius and area
+  print("Updated radius: ${circle.radius}");
+  print("Updated area: ${circle.calculateArea()}");
+
+  // Trying to set an invalid radius
+  circle.radius = -3.0; // This will trigger validation
+}
+```
+
+### Explanation
+
+- The Circle class has a private variable _radius, which is not directly accessible from outside the class.
+- The constructor initializes the _radius variable.
+- Getter (get radius) allows external code to access the value of _radius.
+- Setter (set radius) provides controlled access to update the value of _radius with validation.
+
+The calculateArea method demonstrates how methods can use the encapsulated data.
+
+
+
+### Inheritance
+
+Generally speaking, inheritance is the process of gaining properties. OOP allows for the inheritance of properties from one object to another.
+
+### `Code sample`
+
+```dart
+// Base class (Superclass)
+class Vehicle {
+  String brand;
+  int year;
+
+  // Constructor for Vehicle
+  Vehicle(this.brand, this.year);
+
+  // Method to display vehicle info
+  void displayInfo() {
+    print("Brand: $brand");
+    print("Year: $year");
+  }
+}
+
+// Derived class (Subclass) inheriting from Vehicle
+class Car extends Vehicle {
+  String model;
+
+  // Constructor for Car which uses super to call the base class constructor
+  Car(String brand, int year, this.model) : super(brand, year);
+
+  // Method to display car-specific info
+  void displayCarInfo() {
+    displayInfo(); // Call the base class method
+    print("Model: $model");
+  }
+}
+
+void main() {
+  // Creating an instance of the Car class
+  Car car = Car('Toyota', 2021, 'Corolla');
+
+  // Accessing methods from both base and derived classes
+  car.displayCarInfo();
+}
+```
+
+### Explanation
+
+- The Vehicle class is the base class with instance variables brand and year, and a method displayInfo.
+- The Car class is the derived class that extends (inherits from) the Vehicle class. It adds an additional property model and a method displayCarInfo.
+- The Car constructor uses super to call the constructor of the base class (Vehicle).
+- The main function demonstrates creating an instance of the Car class and accessing methods from both the base and derived classes.
+
+
+### Polymorphism
+
+Polymorphism is the practice of having many classes use the same method name while redefining it for the derived classes.
+
+![Animals](https://raw.githubusercontent.com/JoseModi97/images/main/inheritance.PNG){: width="972" height="589" }
+
