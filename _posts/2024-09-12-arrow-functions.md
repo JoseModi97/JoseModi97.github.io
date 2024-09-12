@@ -1,5 +1,5 @@
 ---
-title: Arrow
+title: Arrow Functions
 description: The Arrow function is represented by => symbol. 
 author: modi
 date: 2024-09-12 09:34:00 +0800

@@ -1,6 +1,6 @@
 ---
 title: Anonymous Functions
-description: An anonymous function behaves the same as a regular function, but it does not have a name with it.
+description: It behaves the same as a regular function, but it does not have a name with it.
 author: modi
 date: 2024-09-12 09:27:00 +0800
 categories: [Dart, Functions]
