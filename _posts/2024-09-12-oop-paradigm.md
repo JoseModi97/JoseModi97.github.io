@@ -288,3 +288,131 @@ Polymorphism is the practice of having many classes use the same method name whi
 
 ![Animals](https://raw.githubusercontent.com/JoseModi97/images/main/inheritance.PNG){: width="972" height="589" }
 
+### `Code sample`
+
+```dart
+// Base class
+class Animal {
+  // Method to be overridden by derived classes
+  void makeSound() {
+    print("Animal makes a sound");
+  }
+}
+
+// Derived class Dog that overrides makeSound method
+class Dog extends Animal {
+  @override
+  void makeSound() {
+    print("Dog barks");
+  }
+}
+
+// Derived class Cat that overrides makeSound method
+class Cat extends Animal {
+  @override
+  void makeSound() {
+    print("Cat meows");
+  }
+}
+
+void main() {
+  // Creating instances of Animal, Dog, and Cat
+  Animal animal = Animal();
+  Dog dog = Dog();
+  Cat cat = Cat();
+
+  // Calling makeSound method for each instance
+  animal.makeSound(); // Calls Animal's version
+  dog.makeSound();    // Calls Dog's version
+  cat.makeSound();    // Calls Cat's version
+}
+```
+
+### Explanation
+
+- The Animal class is the base class with a method makeSound.
+- The Dog and Cat classes are derived classes that override the makeSound method with their own implementations.
+- In the main function, instances of Animal, Dog, and Cat are created.
+- The makeSound method is called on each object, demonstrating polymorphism as the appropriate version of the method is invoked based on the actual type of the object.
+
+
+### Abstraction
+
+Abstraction refers to the user’s interaction with just a subset of an object’s characteristics and operations. To access a complicated item, abstraction uses simpler, high-level techniques.
+
+      - Simple items are used to show complexity.
+      - Keep complicated information hidden from the user.
+
+Simple classes are used to indicate complexity in abstraction. Encapsulation is an extension of abstraction.
+
+Advantages of Abstraction
+
+- It simplifies the process of seeing things in their entirety.
+- Code duplication is avoided, and reusability is increased.
+- Because just the most necessary information is shown to the user, it helps to enhance the security of an application or software.
+
+
+
+### `Code example`
+```dart
+// Abstract class Shape
+abstract class Shape {
+  // Abstract method (no implementation)
+  double calculateArea();
+
+  // Concrete method (with implementation)
+  void printInfo() {
+    print("This is a shape.");
+  }
+}
+
+// Concrete class Circle extends Shape
+class Circle extends Shape {
+  double radius;
+
+  // Constructor for Circle
+  Circle(this.radius);
+
+  // Override the abstract method to provide specific implementation
+  @override
+  double calculateArea() {
+    return 3.14 * radius * radius;
+  }
+}
+
+// Concrete class Rectangle extends Shape
+class Rectangle extends Shape {
+  double width;
+  double height;
+
+  // Constructor for Rectangle
+  Rectangle(this.width, this.height);
+
+  // Override the abstract method to provide specific implementation
+  @override
+  double calculateArea() {
+    return width * height;
+  }
+}
+
+void main() {
+  // Create instances of Circle and Rectangle
+  Circle circle = Circle(5.0);
+  Rectangle rectangle = Rectangle(10.0, 20.0);
+
+  // Using the common interface provided by the Shape abstract class
+  circle.printInfo();  // Calls the concrete method in the abstract class
+  print("Circle Area: ${circle.calculateArea()}");
+
+  rectangle.printInfo();  // Calls the concrete method in the abstract class
+  print("Rectangle Area: ${rectangle.calculateArea()}");
+}
+```
+
+
+
+### Explanation
+
+- The Shape class is an abstract class with an abstract method calculateArea() and a concrete method printInfo().
+- The Circle and Rectangle classes are concrete classes that extend the Shape class and provide implementations for the abstract method.
+- In the main function, instances of Circle and Rectangle are created and used through the common interface provided by the Shape abstract class.
