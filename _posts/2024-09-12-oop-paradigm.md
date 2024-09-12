@@ -94,7 +94,7 @@ class Person {
 
 ```
 Class Declaration
-:The class keyword is used to declare a class, followed by the class name Person.
+: The class keyword is used to declare a class, followed by the class name Person.
 
 
 
