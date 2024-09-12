@@ -218,3 +218,11 @@ The code snippets below indicate all the functions. Use the comments as your gui
   }
  
 ```
+
+
+### Explanation:
+- printWelcomeMessage(): Prints a welcome message. No parameters and no return type.
+greetUser(String name): Prints a greeting message using the provided name. Takes one parameter and has no return type.
+- add(int a, int b): Returns the sum of two integers. Takes two parameters and returns an int.
+- InstructorName(): Returns a fixed string, the instructor's name. No parameters and returns a String.
+- multiply(int a, int b): Returns the product of two integers. Takes two parameters and returns an int.
