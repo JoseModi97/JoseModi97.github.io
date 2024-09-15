@@ -39,6 +39,6 @@ mermaid: true
 `Real-World Applications`: Some popular applications built with Flutter include the Google Ads app, Reflectly, and Alibaba. These apps benefit from Flutter’s rapid development cycles and consistent performance across platforms.
 
 Key Points
-: Flutter is a versatile and powerful framework for cross-platform development.
-: It uses a single codebase for multiple platforms, making it an efficient tool for developers.
-: Flutter’s architecture revolves around widgets, with hot reload enabling quick iterations and testing.
+  - Flutter is a versatile and powerful framework for cross-platform development.
+  - It uses a single codebase for multiple platforms, making it an efficient tool for developers.
+  - Flutter’s architecture revolves around widgets, with hot reload enabling quick iterations and testing.
