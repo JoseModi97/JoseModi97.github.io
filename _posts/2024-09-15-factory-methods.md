@@ -1,5 +1,5 @@
 ---
-title: OOP Paragidm
+title: Factory Methods
 description: Factory constructors do use the return key word.
 author: modi
 date: 2024-09-15 04:07:00 +0800
