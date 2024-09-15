@@ -60,7 +60,7 @@ Visual Studio Code (VS Code) is a popular code editor that supports Flutter deve
 
 `Steps`:
 
-   - Download Visual Studio Code: [Click Me](https://code.visualstudio.com/download) to download the appropriate version for your operating system.
+   - Download Visual Studio Code: [Click Me](https://code.visualstudio.com/download){:target="_blank"} to download the appropriate version for your operating system.
    - Install Visual Studio Code: Follow the installation instructions for your operating system.
 
 ## Install Flutter and Dart Extensions
