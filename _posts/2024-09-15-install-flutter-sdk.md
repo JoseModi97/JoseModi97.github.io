@@ -3,8 +3,8 @@ title: Installing Flutter SDK
 description:  A comprehensive description on how to install flutter sdk
 author: modi
 date: 2024-09-15 05:31 +0800
-categories: [Flutter, Introduction]
-tags: [flutter-Intro]
+categories: [Flutter, Installation]
+tags: [flutter-installation]
 pin: true
 math: true
 mermaid: true
