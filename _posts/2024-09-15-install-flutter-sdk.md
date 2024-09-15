@@ -26,24 +26,24 @@ To use Flutter from the command line, you need to add it to your system’s PATH
 
 Steps:
 
-Windows:
-  - Open System Properties: Press Win + Pause, then click on "Advanced system settings".
-  - Environment Variables: Click on the "Environment Variables" button.
-  - Edit Path: Find the "Path" variable in the system variables section and click "Edit".
-  - Add Flutter bin directory: Add the path to the bin directory inside your Flutter installation to the Path    variable. For example, if you extracted Flutter to C:\src\flutter, you would add C:\src\flutter\bin to the   Path.
-  - Save changes: Click "OK" to save the changes.
-macOS:
-   - Open Terminal: Open the Terminal application.
-   - Edit .bash_profile or .zshrc: Open your shell configuration file (usually .bash_profile or .zshrc) in a  text editor.
-   - Add Flutter to PATH: Add the following line to the file, replacing /path/to/flutter with the actual path  to your Flutter installation:
-   bashCopy codeexport PATH="/path/to/flutter/bin:$PATH"
-   - Save and source the file: Save the file and run source ~/.bash_profile or source ~/.zshrc to apply the   changes.
-Linux:
-   - Open Terminal: Open the Terminal application.
-   - Edit .bashrc: Open the .bashrc file in your home directory with a text editor.
-   - Add Flutter to PATH: Add the following line to the file, replacing /path/to/flutter with the actual path to your Flutter installation:
-   bashCopy codeexport PATH="/path/to/flutter/bin:$PATH"
-   - Save and source the file: Save the file and run source ~/.bashrc to apply the changes.
+Windows
+: Open System Properties: Press Win + Pause, then click on "Advanced system settings".
+: Environment Variables: Click on the "Environment Variables" button.
+: Edit Path: Find the "Path" variable in the system variables section and click "Edit".
+: Add Flutter bin directory: Add the path to the bin directory inside your Flutter installation to the Path  variable. For example, if you extracted Flutter to C:\src\flutter, you would add C:\src\flutter\bin to the   Path.
+: Save changes: Click "OK" to save the changes.
+macOS
+: Open Terminal: Open the Terminal application.
+: Edit .bash_profile or .zshrc: Open your shell configuration file (usually .bash_profile or .zshrc) in a  text editor.
+: Add Flutter to PATH: Add the following line to the file, replacing /path/to/flutter with the actual path  to your Flutter installation:
+bashCopy codeexport PATH="/path/to/flutter/bin:$PATH"
+: Save and source the file: Save the file and run source ~/.bash_profile or source ~/.zshrc to apply the   changes.
+Linux
+: Open Terminal: Open the Terminal application.
+: Edit .bashrc: Open the .bashrc file in your home directory with a text editor.
+: Add Flutter to PATH: Add the following line to the file, replacing /path/to/flutter with the actual path to your Flutter installation:
+bashCopy codeexport PATH="/path/to/flutter/bin:$PATH"
+: Save and source the file: Save the file and run source ~/.bashrc to apply the changes.
 
 ## Verify Flutter Installation
 
