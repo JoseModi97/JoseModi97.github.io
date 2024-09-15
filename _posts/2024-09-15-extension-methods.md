@@ -2,7 +2,7 @@
 title: Extension Methods
 description:  A class has only one instance and also provides a global point of access to it. 
 author: modi
-date: 2024-09-15 04:48:00 +0300
+date: 2024-09-15 04:48:00 +0800
 categories: [Dart, OOP]
 tags: [dart-oop]
 pin: true

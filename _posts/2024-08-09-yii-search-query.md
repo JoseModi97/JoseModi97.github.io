@@ -2,7 +2,7 @@
 title: Yii Search Query
 description: A blog post on how I used query builder to perform advanced searched
 author: modi
-date: 2024-08-09 13:43:00 +0300
+date: 2024-08-09 13:43:00 +0800
 categories: [Yiiframework, SearchQuery]
 tags: [php]
 pin: false

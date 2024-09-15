@@ -2,7 +2,7 @@
 title: Configuring Web Servers for Your Yii2 Application
 description: A Comprehensive Guide on how to configure yii2 web server
 author: modi
-date: 2024-08-05 16:51:00 +0300
+date: 2024-08-05 16:51:00 +0800
 categories: [Yiiframework, Server]
 tags: [php]
 pin: false

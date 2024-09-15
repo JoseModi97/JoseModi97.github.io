@@ -2,7 +2,7 @@
 title: String Manipulation and Collections
 description:  Essential for processing and formatting text data in programming,
 author: modi
-date: 2024-09-15 04:55:00 +0300
+date: 2024-09-15 04:55:00 +0800
 categories: [Dart, Utilities]
 tags: [dart-utilities]
 pin: true

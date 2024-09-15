@@ -2,7 +2,7 @@
 title: Factory Methods
 description: Factory constructors do use the return key word.
 author: modi
-date: 2024-09-15 04:07:00 +0300
+date: 2024-09-15 04:07:00 +0800
 categories: [Dart, OOP]
 tags: [dart-oop]
 pin: true
