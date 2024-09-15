@@ -2,7 +2,7 @@
 title: Enhancing Security with Yii2's Two-Factor Authentication (2FA)
 description: A blog post on how to implement 2 factor authentication using yii
 author: modi
-date: 2024-08-04 08:56:00 +0800
+date: 2024-08-04 08:56:00 +0300
 categories: [Yiiframework, 2FA]
 tags: [php]
 pin: false

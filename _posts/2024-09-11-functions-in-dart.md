@@ -2,7 +2,7 @@
 title: Functions in Dart
 description: Functions are the block of code that performs a specific task.
 author: modi
-date: 2024-09-11 08:37:00 +0800
+date: 2024-09-11 08:37:00 +0300
 categories: [Dart, Functions]
 tags: [dart-functions]
 pin: true

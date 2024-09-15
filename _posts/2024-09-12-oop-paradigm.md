@@ -2,7 +2,7 @@
 title: OOP Paragidm
 description: OOP uses objects and their interactions to design and program
 author: modi
-date: 2024-09-12 09:47:00 +0800
+date: 2024-09-12 09:47:00 +0300
 categories: [Dart, OOP]
 tags: [dart-oop]
 pin: true

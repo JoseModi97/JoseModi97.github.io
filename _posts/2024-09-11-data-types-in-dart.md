@@ -2,7 +2,7 @@
 title: Data Types in Dart
 description: A data type is an attribute of data which tells the compiler or interpreter how the programmer intends to use the data.
 author: modi
-date: 2024-09-11 05:49:00 +0800
+date: 2024-09-11 05:49:00 +0300
 categories: [Dart, DataTypes]
 tags: [dart-intro]
 pin: true

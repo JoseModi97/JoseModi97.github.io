@@ -2,7 +2,7 @@
 title: Anonymous Functions
 description: It behaves the same as a regular function, but it does not have a name with it.
 author: modi
-date: 2024-09-12 09:27:00 +0800
+date: 2024-09-12 09:27:00 +0300
 categories: [Dart, Functions]
 tags: [dart-functions]
 pin: true
