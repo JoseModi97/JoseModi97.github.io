@@ -16,7 +16,7 @@ Before you begin developing with Flutter, you need to set up the Flutter SDK. Th
 
 Steps:
 
-  - Visit the Flutter website: [Click Me](https://docs.flutter.dev/get-started/install) to download flutter sdk based on your operating system : Windows, macOS, or Linux.
+  - Visit the Flutter website: [Click Me](https://docs.flutter.dev/get-started/install){:target="_blank"} to download flutter sdk based on your operating system : Windows, macOS, or Linux.
   - Download the Flutter SDK archive: Follow the instructions on the website to download the correct archive for your system.
   - Extract the archive: Extract the downloaded archive to your desired location. This will create a flutter directory with all necessary files.
 
