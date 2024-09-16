@@ -10,6 +10,21 @@ math: true
 mermaid: true
 ---
 
+
+## Error Handling in Yii2
+```php
+  try {
+
+
+  } catch (\Throwable $th) {
+    $message = $th->getMessage();
+    if (YII_ENV_DEV) {
+        $message .= ' File: ' . $th->getFile() . ' Line: ' . $th->getLine();
+    }
+    throw new ServerErrorHttpException($message, 500);
+    }
+```
+
 ## Advanced Yii2 GridView Filtering
 ### Concatenating course_code and course_name
 1. Fetch Data from dataProvider: Extract the necessary data from the dataProvider and concatenate the course_code and course_name.
