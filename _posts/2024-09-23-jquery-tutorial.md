@@ -378,3 +378,37 @@ $("div > span").css("color", "red")
 $("div").css("font-size", "20px")
 });
 ```
+
+### target Selector
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<body>
+    <div target="_blank">Element 1</div>
+    <div target="_blank">Element 2</div>
+    <div target="hello">Element 3</div>
+    <div>Element 4</div>
+    <div>Element 5</div>
+</body>
+</html>
+```
+
+```javascript
+"use strict"
+
+
+$(document).ready(function(){
+$("div[target='_blank']").click(function(){
+    console.log("Target is blank");
+})
+
+});
+```
