@@ -338,3 +338,43 @@ $("p.epicClass").click(function(){
 });
 });
 ```
+
+### Children selector
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<body>
+    <div>
+        <span>Span 1</span>
+        <span>Span 2</span>
+        <span>Span 3</span>
+        <p>
+            <span>Span Uber</span>
+        </p>
+    </div>
+
+    <div>
+        <span>Span 4</span>
+    </div>
+</body>
+</html>
+```
+
+```javascript
+"use strict"
+
+
+$(document).ready(function(){
+$("div > span").css("color", "red")
+
+$("div").css("font-size", "20px")
+});
+```
