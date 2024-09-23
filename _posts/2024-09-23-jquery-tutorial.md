@@ -3737,7 +3737,7 @@ $(document).ready(function() {
 
 ```
 
-### Mouse Enter Event
+### Mouse Enter Element
 
 
 ```html
@@ -3773,6 +3773,147 @@ $(document).ready(function() {
 
     $("span").mouseenter(function(event){
         console.log("Entered Span")
+    })
+
+});
+
+```
+
+### Mouse Leave Element
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+
+
+    <span>Epic Span</span>
+</body>
+</html>
+```
+
+```javascript
+"use strict";
+
+$(document).ready(function() {
+
+    $("div").mouseenter(function(event){
+        console.log("Entered Div")
+        $(this).css("color", "red");
+    })
+
+
+    $("div").mouseleave(function(){
+        console.log("Left Mouse")
+        $(this).css("color", "black");
+    })
+
+    $("span").mouseenter(function(event){
+        console.log("Entered Span")
+    })
+
+});
+
+```
+
+### Mouse Hover
+
+This is a combination of Mouse Enter and Mouse Leave Event. It takes two functions
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+
+</body>
+</html>
+```
+
+
+```javascript
+"use strict";
+
+$(document).ready(function() {
+
+
+    $("div").hover(function(){
+    console.log("Entered Div")
+        $(this).css("color", "yellow");
+    },
+    function(){
+           $("div").mouseleave(function(){
+        console.log("Left Mouse")
+        $(this).css("color", "black");
+    })
+    });
+
+    // $("div").mouseenter(function(event){
+    //     console.log("Entered Div")
+    //     $(this).css("color", "red");
+    // })
+
+
+    // $("div").mouseleave(function(){
+    //     console.log("Left Mouse")
+    //     $(this).css("color", "black");
+    // })
+
+});
+
+```
+
+### Mouse Down
+
+To add a mouse down event, you can use the `mousedown` event in jQuery. Here's
+an example:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+
+</body>
+</html>
+```
+
+
+```javascript
+"use strict";
+
+$(document).ready(function() {
+    
+    $("div").mousedown(function(event){
+        console.log("Mouse Down")
     })
 
 });
