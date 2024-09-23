@@ -11,6 +11,113 @@ mermaid: true
 ---
 
 
+## Dependent Dropdown Menu
+
+```php
+
+/*
+ * SCENARIO 1: A 3-level nested dependency example
+ */
+// THE VIEW
+use kartik\depdrop\DepDrop;
+ 
+$catList = [
+    1 => 'Electronics',
+    2 => 'Books',
+    3 => 'Home & Kitchen'
+];
+ 
+// Parent 
+echo $form->field($model, 'cat')->dropDownList($catList, ['id'=>'cat-id']);
+ 
+// Child # 1
+echo $form->field($model, 'subcat')->widget(DepDrop::classname(), [
+    'options'=>['id'=>'subcat-id'],
+    'pluginOptions'=>[
+        'depends'=>['cat-id'],
+        'placeholder'=>'Select...',
+        'url'=>Url::to(['/site/subcat'])
+    ]
+]);
+ 
+// Child # 2
+echo $form->field($model, 'prod')->widget(DepDrop::classname(), [
+    'pluginOptions'=>[
+        'depends'=>['cat-id', 'subcat-id'],
+        'placeholder'=>'Select...',
+        'url'=>Url::to(['/site/prod'])
+    ]
+]);
+ 
+// THE CONTROLLER
+public function actionSubcat() {
+    Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
+    $out = [];
+    if (isset($_POST['depdrop_parents'])) {
+        $parents = $_POST['depdrop_parents'];
+        if ($parents != null) {
+            $cat_id = $parents[0];
+            $out = self::getSubCatList($cat_id); 
+            // the getSubCatList function will query the database based on the
+            // cat_id and return an array like below:
+            // [
+            //    ['id'=>'<sub-cat-id-1>', 'name'=>'<sub-cat-name1>'],
+            //    ['id'=>'<sub-cat_id_2>', 'name'=>'<sub-cat-name2>']
+            // ]
+            return ['output'=>$out, 'selected'=>''];
+        }
+    }
+    return ['output'=>'', 'selected'=>''];
+}
+ 
+public function actionProd() {
+    Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
+    $out = [];
+    if (isset($_POST['depdrop_parents'])) {
+        $ids = $_POST['depdrop_parents'];
+        $cat_id = empty($ids[0]) ? null : $ids[0];
+        $subcat_id = empty($ids[1]) ? null : $ids[1];
+        if ($cat_id != null) {
+           $data = self::getProdList($cat_id, $subcat_id);
+            /**
+             * the getProdList function will query the database based on the
+             * cat_id and sub_cat_id and return an array like below:
+             *  [
+             *      'out'=>[
+             *          ['id'=>'<prod-id-1>', 'name'=>'<prod-name1>'],
+             *          ['id'=>'<prod_id_2>', 'name'=>'<prod-name2>']
+             *       ],
+             *       'selected'=>'<prod-id-1>'
+             *  ]
+             */
+           
+           return ['output'=>$data['out'], 'selected'=>$data['selected']];
+        }
+    }
+    return ['output'=>'', 'selected'=>''];
+}
+
+
+
+public static function getSubCatList($cat_id) {
+    $data = SubCategory::find()
+        ->where(['category_id' => $cat_id])
+        ->select(['id', 'name'])
+        ->asArray()
+        ->all();
+
+    $out = [];
+    foreach ($data as $item) {
+        $out[] = ['id' => $item['id'], 'name' => $item['name']];
+    }
+
+    return $out;
+}
+
+```
+
+
+
 ## Error Handling in Yii2
 ```php
   try {
