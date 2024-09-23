@@ -3,8 +3,8 @@ title: JQuery Bible
 description:  A short tutorial on how to use Jquery
 author: modi
 date: 2024-09-23 10:14 +0800
-categories: [JQuery, Setup]
-tags: [jquery-setup]
+categories: [JQuery, FullTutorial]
+tags: [jquery-notes]
 pin: true
 math: true
 mermaid: true
