@@ -563,3 +563,94 @@ $("#EpicButton").click(function(){
 });
 ```
 
+## set attribute with callback
+
+`usecase 1`
+
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<body>
+    
+<div title="Hello World">I am Awesome</div>
+
+<div title="Hello World">I am Awesome</div>
+
+
+<button id="EpicButton">Click Me</button>
+
+</body>
+</html>
+```
+
+```javascript
+"use strict"
+
+
+$(document).ready(function(){
+var titleVar = $("div").attr("title");
+
+console.log(titleVar);
+
+
+$("#EpicButton").click(function(){
+    $("div").attr("title", function(i, originalValue){
+        console.log(i)
+        console.log(originalValue)
+        return "New Title";
+    })
+})
+
+});
+```
+
+
+`usecase 2`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<body>
+    
+<div title="Hello World">I am Awesome</div>
+
+
+<button id="EpicButton">Click Me</button>
+
+</body>
+</html>
+```
+
+```javascript
+"use strict"
+
+
+$(document).ready(function(){
+var titleVar = $("div").attr("title");
+
+console.log(titleVar);
+
+
+$("#EpicButton").click(function(){
+    $("div").attr("title", function(i, originalValue){
+        return  i + 100;
+    })
+})
+
+});
+```
