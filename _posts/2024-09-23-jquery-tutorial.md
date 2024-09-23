@@ -213,3 +213,34 @@ $("#HW, .epicClass").click(function(){
 });
 });
 ```
+
+### select first element with same property e.g class
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<body>
+    <div class="epicClass">Hello World</div>    
+    <p id="HW">Paragraph</p>
+    <div class="epicClass"> Second Div</div>   
+</body>
+</html>
+```
+
+```javascript
+"use strict"
+
+
+$(document).ready(function(){
+$("#HW, .epicClass:first").click(function(){
+    console.log("Awesome click first element");
+});
+});
+```
