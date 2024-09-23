@@ -244,3 +244,97 @@ $("#HW, .epicClass:first").click(function(){
 });
 });
 ```
+
+### oddeven
+
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<body>
+
+    <table border = "1">
+        <tr>
+            <th>Superhero</th>
+            <th>Franchise</th>
+        </tr>
+        <tr>
+            <td>Batman</td>
+            <td>DC</td>
+        </tr>
+        <tr>
+            <td>Yoda</td>
+            <td>Start Wars</td>
+        </tr>
+        <tr>
+
+            <td>Thanos</td>
+            <td>Marvel Comics</td>
+        </tr>
+
+<tr>
+
+            <td>Little Ani</td>
+            <td>Start Wars</td>
+        </tr>
+    </table>
+</body>
+</html>
+```
+
+```javascript
+"use strict"
+
+
+$(document).ready(function(){
+$("tr:odd").css( "background-color", "red");
+
+$("tr:even").css( "background-color", "yellow");
+
+});
+
+```
+
+
+### Element and Class Selector
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<body>
+    <div class="epicClass">Element 1</div>    
+    <p>Paragraph 1</p>
+    <p class="epicClass">Paragraph 2</p>
+    <div class="epicClass"> Element 2 </div>   
+    <div class="epicClass"> Element 3</div>   
+    <div class="epicClass"> Element 4</div>   
+    <div class="epicClass"> Element 5</div>   
+    
+</body>
+</html>
+```
+
+```javascript
+"use strict"
+
+
+$(document).ready(function(){
+$("p.epicClass").click(function(){
+    console.log(" Element and Class Selector");
+});
+});
+```
