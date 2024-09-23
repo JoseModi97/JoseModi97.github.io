@@ -928,7 +928,7 @@ $("div").html("<b>You are a bold one.</b>")
 ```
 
 
-## Class
+### Class
 hasClass, removeClass, toggleClass, addClass
 
 ```html
