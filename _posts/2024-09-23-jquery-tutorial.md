@@ -1129,3 +1129,119 @@ $(document).ready(function() {
 });
 
 ```
+
+### Prevent Default
+
+This function is for preventing the default nature of html submit button that results in refreshing of the page and going to the web location of the action
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<body>
+    <form action="account.html">
+        <input type="text" name="" id="" placeholder="Enter username">
+        <br/>
+        <input type="password" name="" id="" placeholder="Enter password">
+        <br/>
+        <input id="SubmitButton" type="submit" value="Submit">
+    </form>
+</body>
+</html>
+```
+
+```javascript
+"use strict";
+
+$(document).ready(function() {
+
+    $("#SubmitButton").click(function(event){
+        event.preventDefault();
+    })
+});
+
+```
+
+### Mouse Single Click
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+
+    <p id="EpicId">Epic Paragraph</p>
+</body>
+</html>
+```
+
+
+```javascript
+"use strict";
+
+$(document).ready(function() {
+
+    $("div").click(function(event){
+        console.log("A div is clicked")
+    })
+
+
+    $("#EpicId").click(function(event){
+        alert("Epic Id Alert")
+    })
+
+});
+
+```
+
+### Mouse Double Click
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+
+</body>
+</html>
+```
+
+```javascript
+"use strict";
+
+$(document).ready(function() {
+    
+    $("div").dblclick(function(event){
+        console.log("Double Click")
+    })
+
+});
+
+```
+
+### Mouse Enter Event
+
