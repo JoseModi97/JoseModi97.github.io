@@ -488,7 +488,7 @@ $("p:contains(My)").css("background-color", "red")
 ```
 
 
-## Attributes
+## Chapter 3: Attributes
 ### Get Attribute
 
 ```html
@@ -926,3 +926,161 @@ $("div").html("<b>You are a bold one.</b>")
 });
 });
 ```
+
+
+## Class
+hasClass, removeClass, toggleClass, addClass
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<body>
+    
+    <p class="epicClass">Hello World</p>
+    <p class="epicClass">Hello World</p>
+    <p id="EpicID">Hello World</p>
+
+<button id="RemoveClass">Remove Class</button>
+<button id="ToggleClass">Toggle Class</button>
+<button id="AddClass">Add Class</button>
+
+</body>
+</html>
+```
+
+```javascript
+"use strict"
+
+
+$(document).ready(function()
+{$("p").click(function(){
+    var result = $("p").hasClass("epicClass")
+    console.log(result)
+});
+
+
+$("#EpicID").click(function(){
+    var result = $("#EpicID").hasClass("epicClass")
+    console.log(result)
+});
+
+
+
+$("#RemoveClass").click(function(){
+
+$("p").removeClass();
+
+});
+
+
+$("#ToggleClass").click(function(){
+
+$("p").toggleClass("epicClass");
+
+});
+
+$("#AddClass").click(function(){
+
+$("p").addClass("addedClass");
+
+});
+});
+```
+
+## Chapter 4: Events
+### Binding and Unbinding
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<body>
+    
+    <p class="epicClass">Hello World</p>
+
+    <button id="BindButton">Bind Button</button>
+
+</body>
+</html>
+```
+
+
+```javascript
+"use strict";
+
+$(document).ready(function() {
+    // Initial bind to paragraphs
+
+    function AfterBind(event){
+        console.log("After Bind Function")
+    }
+    $("p").bind("click", function() {
+        console.log("Before Bind");
+    });
+
+    // Bind button click event
+    $("#BindButton").click(function() {
+        // Unbind the previous click event from paragraphs
+        $("p").unbind("click");
+
+        // Bind a new click event to paragraphs
+        // $("p").bind("click", function(event) {
+        //     console.log("After Bind");
+        // });
+
+
+        $("p").bind("click", function(event) {
+            AfterBind(event)
+        });
+    });
+});
+
+```
+
+### Attributes
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<body>
+    
+    <p class="epicClass">Hello World</p>
+</body>
+</html>
+
+```
+```javascript
+"use strict";
+
+$(document).ready(function() {
+
+    $("p").bind("click", function(event) {
+        console.log(event);
+        console.log(event.pageX+ " : " + event.pageY);
+    });
+});
+
+```
+
