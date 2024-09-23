@@ -40,7 +40,7 @@ mermaid: true
 This function is used to check if the document is done loading. The following is longhand and shorthand version of the implementation
 
 `custom.js`
-```jquery
+```javascript
 "use strict"
 
 //Longhand Version
@@ -77,7 +77,7 @@ A guide on how to select a html element from jquery which is an easier approach 
 </html>
 ```
 
-```jquery
+```javascript
 "use strict"
 
 
@@ -95,7 +95,7 @@ $("p").click(function(){
 
 ### All Element Selector
 
-```jquery
+```javascript
 $(document).ready(function(){
 $("*").click(function(){
     console.log("All element Selector");
@@ -128,7 +128,7 @@ this is only applied to the element that caused the trigger. Lets say we have se
 ```
 
 
-```jquery
+```javascript
 "use strict"
 
 
