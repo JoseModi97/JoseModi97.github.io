@@ -412,3 +412,42 @@ $("div[target='_blank']").click(function(){
 
 });
 ```
+
+
+### Type (Input) Selector
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<body>
+    <input type="text" name="" id="" >
+    <input type="text" name="" id="" >
+    <input type="button" value="Button 1">
+    <input type="button"  value="Button 2">
+    <input type="button"  value="Button 3">
+</body>
+</html>
+```
+
+```javascript
+"use strict"
+
+
+$(document).ready(function(){
+$(":button").click(function(){
+    console.log("Button is clicked");
+});
+
+$(":input").click(function(){
+    console.log("input is clicked");
+});
+
+});
+```
