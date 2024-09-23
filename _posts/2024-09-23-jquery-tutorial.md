@@ -1084,3 +1084,48 @@ $(document).ready(function() {
 
 ```
 
+
+
+### Propagation 
+Propagation is when a child element inherits the event of the parent element when it occurs. 
+: In order to prevent propagation, you can use the following function
+```javascript
+event.preventPropagation()
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<body>
+    
+    <div id="Red" style="background-color: red; height: 200px">
+        Red Box
+        <div id="Yellow" style="background-color: yellow; width: 100px">Yellow Box</div>
+    </div>
+</body>
+</html>
+```
+
+```javascript
+"use strict";
+
+$(document).ready(function() {
+
+    $("#Red").click(function(){
+        console.log("Red Button Clicked")
+    })
+
+    $("#Yellow").click(function(event){
+        console.log("Yellow Button Clicked")
+        event.stopPropagation();
+    })
+});
+
+```
