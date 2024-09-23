@@ -29,7 +29,7 @@ mermaid: true
 </html>
 
 ```
-
+## Chapter 1 - Introduction
 ### `custom.js`
 
 ```javascript
@@ -54,6 +54,7 @@ $(function(){
 });
 ```
 
+## Chapter 2: Selectors
 ### Element Selector
 
 A guide on how to select a html element from jquery which is an easier approach than javascript
@@ -144,7 +145,7 @@ $("div").click(function(){
 ```
 
 
-## Class Selector
+### Class Selector
 
 
 ```html
@@ -245,7 +246,7 @@ $("#HW, .epicClass:first").click(function(){
 });
 ```
 
-### oddeven
+### oddeven selector
 
 ```html
 
@@ -486,7 +487,9 @@ $("p:contains(My)").css("background-color", "red")
 });
 ```
 
-### fetch html attribute
+
+## Attributes
+### Get Attribute
 
 ```html
 <!DOCTYPE html>
@@ -520,7 +523,7 @@ console.log(titleVar);
 
 ```
 
-### Set html attribute
+### Set Attributes
 
 ```html
 
@@ -563,7 +566,7 @@ $("#EpicButton").click(function(){
 });
 ```
 
-## set attribute with callback
+### Set Attribute With Callback Function
 
 `usecase 1`
 
@@ -656,7 +659,7 @@ $("#EpicButton").click(function(){
 ```
 
 
-### Setting Multiple Attributes
+### Set Multiple Attributes
 
 ```html
 <!DOCTYPE html>
@@ -742,8 +745,8 @@ $("div").removeAttr("title");
 ```
 
 
-## get and set text of an element
-
+### Text Attribute
+get and set text of an element
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -784,8 +787,8 @@ $("div").text("Awesome Stuff");
 });
 ```
 
-### set and retrieve data values
-
+### Data Attribute
+set and retrieve data values
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -831,6 +834,94 @@ var name = $("div").data("name");
 
 console.log(name)
 console.log(age)
+
+});
+});
+```
+
+
+`Get and Set Values on input html fields`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<body>
+    
+<input type="text" id="SimpleId" value="Awesome Input">
+
+<button id="EpicButton">Click Me</button>
+
+</body>
+</html>
+```
+
+
+```javascript
+"use strict"
+
+
+$(document).ready(function(){
+
+
+$("#EpicButton").click(function(){
+
+var val = $("#SimpleId").val();
+
+console.log(val);
+
+$('#SimpleId').val('Batman is Coming');
+
+});
+});
+```
+
+### HTML Value
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<body>
+    
+<div>
+    <p>Hello World</p>
+</div>
+
+<button id="EpicButton">Click Me</button>
+
+</body>
+</html>
+```
+
+
+```javascript
+"use strict"
+
+
+$(document).ready(function(){
+
+
+$("#EpicButton").click(function(){
+
+
+// console.log($("div").text());
+console.log($("div").html());
+
+// $("div").text("Awesome stuff")
+$("div").html("<b>You are a bold one.</b>")
 
 });
 });
