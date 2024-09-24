@@ -4177,3 +4177,46 @@ $('*').blur(function() {
 });
 
 ```
+
+### Document Window Scroll
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<body>
+    <textarea name="" id="" cols="30" rows="10">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, maiores ullam libero dolores iusto voluptatem. Illum saepe consequuntur enim asperiores doloremque, dolor eos voluptate perspiciatis! Reiciendis eligendi voluptatem molestiae quia!
+        Voluptatum iste, asperiores veniam repellat ut alias voluptate, temporibus veritatis odit dolorum tempora at. Aspernatur cum, adipisci esse maiores ipsa quis iste, pariatur perferendis magni, enim dolores dolore soluta porro!
+        Culpa dolores pariatur odio atque est reprehenderit porro at, cupiditate doloribus. Cupiditate nulla placeat quos laborum tempore optio sit natus! Excepturi molestiae eos sapiente cupiditate enim ex pariatur ea voluptatibus.
+        Animi optio ipsum harum magnam consequatur porro a autem itaque, consectetur libero facere, perspiciatis molestiae totam repudiandae necessitatibus ea iusto. Beatae, deleniti tenetur. Optio minima eligendi sequi tempora. Voluptates, eos.
+        Voluptatum libero, temporibus assumenda dolor, repudiandae officiis cumque alias voluptatem consequuntur ipsum consequatur deleniti eligendi vitae modi optio debitis? Totam non minus earum accusantium eveniet nihil modi adipisci labore ipsum.
+    </textarea>
+</body>
+</html>
+```
+
+
+```javascript
+"use strict";
+
+$(document).ready(function() {
+
+var num = 0;
+$('*').scroll(function() {
+    console.log('Scrolling yay')
+       num ++
+
+    console.log(num);
+});
+
+});
+
+```
