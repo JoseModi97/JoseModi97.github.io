@@ -4108,3 +4108,72 @@ $(document).ready(function() {
 });
 
 ```
+
+### Form. Input Change
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<body>
+
+    <input type="text" name="username" id="" placeholder="Enter username" value="JosephModi1997">
+</body>
+</html>
+```
+
+```javascript
+"use strict";
+
+$(document).ready(function() {
+
+ $('input').change(function() {
+                alert('The username has been changed to: ' + $(this).val());
+    });
+
+});
+
+```
+
+### Form Blur
+Used for validation of input values
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<body>
+    <div>Hello World</div>
+    <p>I love fishy fish</p>
+    <input type="text" name="" id="batman">
+    <a href="#">I am Batman</a>
+</body>
+</html>
+```
+
+
+```javascript
+"use strict";
+
+$(document).ready(function() {
+
+
+$('*').blur(function() {
+    console.log('Please don\'t leave me')
+});
+
+});
+
+```
