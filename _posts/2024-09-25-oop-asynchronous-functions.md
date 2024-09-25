@@ -596,3 +596,19 @@ There are, of course, more access modes! Take a look at the following table:
 ![Desktop View](https://raw.githubusercontent.com/JoseModi97/images/refs/heads/main/Character.PNG){: width="972" height="589" .w-75 .normal}
 
 As you have seen in the first section, there are two types of flat files. This is also why there's an option to specify which format you want to open, such as text or binary. Of course, the former is the default. When you add 'b' to the access modes, you can read the file in binary format rather than the default text format. It is used when the file to be accessed is not in text format.
+
+
+### Understanding the file methods (read, write, append, seek(), tell())
+
+The open function returns a file object, which has several methods that can be used to manipulate the file. Some of the most commonly used methods are:
+
+1. read: This method is used to read the contents of a file. By default, the read method reads the entire contents of the file and returns it as a string. If a number is passed as an argument to the read method, it reads that many characters from the file and returns them as a string.
+2. write: This method is used to write to a file. The argument passed to the write method is written to the file as a string. If the file was opened in write mode ("w"), the contents of the file will be truncated and the new data will be written to the file. If the file was opened in append mode ("a"), the new data will be appended to the end of the file.
+3. seek: This method is used to change the file pointer's position. The argument passed to the seek method is the number of bytes to move the file pointer. The seek method takes two optional arguments: the first argument is the number of bytes to move the file pointer, and the second argument is the starting point from where the file pointer should be moved. The starting point can be one of the following: 0 (the beginning of the file), 1 (the current position of the file pointer), or 2 (the end of the file).
+4. tell: This method is used to return the current position of
+
+Working with Files: Basic Syntax
+
+One of the most important functions that you will need to use as you work with files in Python is open(), a built-in function that opens a file and allows your program to use it and work with it.
+
+![Desktop View](https://raw.githubusercontent.com/JoseModi97/images/refs/heads/main/OpenFile.PNG){: width="972" height="589" .w-75 .normal}
