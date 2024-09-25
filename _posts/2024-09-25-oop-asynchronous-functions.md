@@ -77,3 +77,30 @@ A number, string, list, dictionary, etc., used in a program is an object of a co
 
 <class 'str'>
 ```
+
+
+### Create a Class
+
+A class in Python can be defined using the class keyword.
+
+
+
+
+`Syntax`:
+
+
+
+```bash
+class <ClassName>:
+
+    <statement1>
+
+    <statement2>
+
+    .
+
+    .
+
+    <statementN>
+
+```
