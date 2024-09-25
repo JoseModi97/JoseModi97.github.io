@@ -594,3 +594,5 @@ You use 'r', the default mode, to read the file. In other cases where you want 
 There are, of course, more access modes! Take a look at the following table:
 
 ![Desktop View](https://raw.githubusercontent.com/JoseModi97/images/refs/heads/main/Character.PNG){: width="972" height="589" .w-75 .normal}
+
+As you have seen in the first section, there are two types of flat files. This is also why there's an option to specify which format you want to open, such as text or binary. Of course, the former is the default. When you add 'b' to the access modes, you can read the file in binary format rather than the default text format. It is used when the file to be accessed is not in text format.
