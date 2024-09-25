@@ -104,3 +104,30 @@ class <ClassName>:
     <statementN>
 
 ```
+
+As per the syntax above, a class is defined using the `class` keyword followed by the class name and: operator after the class name, which allows you to continue in the next indented line to define class members.
+
+The following are class members:
+
+Class attributes
+Constructor
+Instance attributes
+Properties
+Class methods
+
+
+
+
+A class can also be defined without any members. The following example defines an empty class using the `pass` keyword.
+
+
+
+```bash
+class Person:
+
+    pass
+
+```
+
+
+We will discuss the class members in detail in the next lesson
