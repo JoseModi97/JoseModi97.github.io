@@ -568,3 +568,29 @@ file is a mandatory argument that you have to provide to the open function wh
 To put it simply, the file argument represents the path where your file resides in your system.
 
 If the path is in the current working directory, you can just provide the filename. If not then you have to provide the absolute path of the file, just like in the following examples: my_file_handle=open("mynewtextfile.txt") If the file resides in a directory other than the current directory, you have to provide the absolute path with the file name:
+
+```python
+my_file_handle = open("mynewtestfile.txt")
+my_file_handle = open("/path/to/mynewtextfile.txt") #different folder
+my_file_handle = open("c:\\path\\to\\mynewtextfile.txt") #Windows machine you can use backslashes
+```
+
+
+Let's understand the second argument of the open function, i.e., access modes.
+
+`Access Modes`
+
+Access modes define in which way you want to open a file, whether you want to open a file in:
+
+   - read-only mode
+   - write-only mode
+   - append mode
+   - both read and write mode
+
+Though a lot of access modes exist as shown in the below table, the most commonly used ones are read and write modes. It specifies where you want to start reading or writing in the file.
+
+You use 'r', the default mode, to read the file. In other cases where you want to write or append, you use 'w' or 'a', respectively.
+
+There are, of course, more access modes! Take a look at the following table:
+
+![Desktop View](https://raw.githubusercontent.com/JoseModi97/images/refs/heads/main/Character.PNG){: width="972" height="589" .w-75 .normal}
