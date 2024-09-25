@@ -537,3 +537,34 @@ The raw_input([prompt]) function reads one line from standard input and returns 
 Flat files are data files that contain records with no structured relationships between the records, and there's also no structure for indexing like you typically find it in relational databases. These files can contain only basic formatting, have a small fixed number of fields, and can or can not have a file format.
 
 ![Desktop View](https://raw.githubusercontent.com/JoseModi97/images/refs/heads/main/Flat%20FIle.PNG){: width="972" height="589" .w-75 .normal}
+
+
+### Python File Objects
+
+Python has in-built functions to create, read, write, and manipulate accessible files. The io module is the default module for accessing files that can be used off the shelf without even importing it. Before you read, write, or manipulate the file, you need to make use of the module open(filename, access_mode) that returns a file object called "handle". After which you can simply use this handle to read from or write to a file. Like everything else, files in Python are also treated as an object, which has its own attributes and methods.
+
+An IOError exception is raised if, while opening the file, the operation fails. It could be due to various reasons like trying to read a file that is opened in write mode or accessing a file that is already closed.
+
+As you already read before, there are two types of flat files, text and binary files:
+
+As you might have expected from reading the previous section, text files have an End-Of-Line (EOL) character to indicate each line's termination. In Python, the new line character (\n) is the default EOL terminator.
+Since binary files store data after converting it into a binary language (0s and 1s), there is no EOL character. This file type returns bytes. This file is used when dealing with non-text files such as images, .exe, or .pyc.
+
+Let's now understand the Python file objects in detail, along with necessary examples.
+
+
+`Open()`
+
+The built-in Python function open() has the following arguments: open(file, mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None) The open() function has almost 8 parameters along with their default values for each argument as shown above.
+
+You would be focusing on the first and second parameters for now, which are essential for reading and writing files. And go through other parameters one by one as the tutorial progresses.
+
+Let's understand the first argument, i.e., file.
+
+`File`
+
+file is a mandatory argument that you have to provide to the open function while the rest of the arguments are optional and use their default values.
+
+To put it simply, the file argument represents the path where your file resides in your system.
+
+If the path is in the current working directory, you can just provide the filename. If not then you have to provide the absolute path of the file, just like in the following examples: my_file_handle=open("mynewtextfile.txt") If the file resides in a directory other than the current directory, you have to provide the absolute path with the file name:
