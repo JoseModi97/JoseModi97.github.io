@@ -3118,3 +3118,189 @@ $("div").click(function(){
 });
 
 ```
+
+### Get and Set Element Dimensions
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<style>
+    #RedBox{
+        width: 200px;
+        height: 350px;
+        background-color: red;
+        padding: 10px;
+        border: 2px solid black;
+        margin: 90px;
+    }
+</style>
+<body>
+    <div id="RedBox"></div>
+
+    <button id="ClickMe">Change Width & Height</button>
+
+    <button id="ClickAnotherMe">Change Width & Height</button>
+</body>
+</html>
+```
+
+
+```javascript
+"use strict";
+
+$(document).ready(function() {
+
+var width = $("#RedBox").width();
+var height = $("#RedBox").height();
+
+
+var innerWidth = $("#RedBox").innerWidth();
+var innerHeight = $("#RedBox").innerHeight();
+
+
+
+var outerWidth = $("#RedBox").outerWidth();
+var outerHeight = $("#RedBox").outerHeight();
+
+
+var outerWidthWithMargin = $("#RedBox").outerWidth(true);
+var outerHeightWithMargin = $("#RedBox").outerHeight(true);
+console.log("Width: "+width);
+console.log("Height: "+ height);
+console.log("Inner Width: "+ innerWidth);
+console.log("Inner Height: "+innerHeight);
+console.log("Outer Width: "+ outerWidth);
+console.log("Outer Height: "+outerHeight);
+
+console.log("Outer Width With Margin: "+ outerWidthWithMargin);
+console.log("Outer Height With Margin: "+outerHeightWithMargin);
+
+
+$("#ClickMe").click(function(){
+   $("#RedBox").width(400); 
+})
+
+$("#ClickAnotherMe").click(function(){
+   $("#RedBox").height(400); 
+})
+});
+
+```
+
+### Adding Elements Using Append, Prepend, After and Before
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<style>
+    #EpicDiv{
+        color: red;
+    }
+</style>
+<body>
+    <div id="EpicDiv">Hello World</div>
+    <button id="AppendButton">Append</button>
+    <button id="PrependButton">Prepend</button>
+    <button id="AfterButton">After</button>
+    <button id="BeforeButton">Before</button>
+</body>
+</html>
+```
+
+```javascript
+"use strict";
+
+$(document).ready(function() {
+$("#AppendButton").click(function(){
+   $('#EpicDiv').append("<b>Append</b>")
+})
+
+
+$("#PrependButton").click(function(){
+   $('#EpicDiv').prepend("<b>Prepend</b>")
+})
+
+
+$("#AfterButton").click(function(){
+   $('#EpicDiv').after("<b>After</b>")
+})
+
+$("#BeforeButton").click(function(){
+   $('#EpicDiv').before("<b>Before</b>")
+})
+});
+
+```
+
+
+###  Removing Elements Using Remove and Empty
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<style>
+#parentDiv{
+background-color: red;
+        color: white;
+        min-width: 200px;
+        min-height: 400px;
+    }
+</style>
+<body>
+    <div id="parentDiv" class="epicDiv">
+        Hello World
+        <div>Pizza</div>
+        <div>Fish Fingers</div>
+        <div>Mash Potato</div>
+    </div>
+
+    <div>Pizza is awesome</div>
+
+    <button id="RemoveButton">Remove</button>
+    <button id="EmptyButton">Empty</button>
+
+    <button id="RemoveFilterButton">FIlterRemove</button>
+</body>
+</html>
+```
+
+```javascript
+"use strict";
+
+$(document).ready(function() {
+$("#RemoveButton").click(function(){
+   $("div").remove();
+})
+
+$("#EmptyButton").click(function(){
+   $("div").remove();
+})
+
+$("#RemoveFilterButton").click(function(){
+   $("div").remove(".epicDiv");
+})
+});
+
+```
+
