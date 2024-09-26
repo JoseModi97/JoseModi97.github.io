@@ -3304,3 +3304,203 @@ $("#RemoveFilterButton").click(function(){
 
 ```
 
+## Traversing
+### Elements By Index
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<style>
+.red{
+    color: red;
+    }
+</style>
+<body>
+    <div>Div 1</div>
+    <div>Div 2</div>
+    <div>Div 3</div>
+    <div>Div 4</div>
+    <div>Div 5</div>
+</body>
+</html>
+
+```
+
+```javascript
+"use strict";
+
+$(document).ready(function() {
+$("div").eq(3).addClass("red");
+});
+
+```
+
+### Child Elements
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<style>
+    .red
+    {
+    color: red;
+    }
+</style>
+<body>
+    <div>
+        Hello World
+    </div>
+    <div>
+        <div>Div 1</div>
+        <div class="hello">Div 2</div>
+        <div>Div 3</div>
+        <div class="hello">Div 4</div>
+        <div>Div 5</div>
+    </div>
+</body>
+</html>
+
+```
+
+
+```javascript
+"use strict";
+
+$(document).ready(function() {
+// $("div").children().addClass("red")
+$("div").children(".hello").addClass("red")
+});
+
+```
+
+
+### Parent Element
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<style>
+    .red
+    {
+    color: red;
+    }
+</style>
+<body>
+<div>
+    Root Div
+    <div>
+        Hello World
+        <div id="Hello">Div 1</div>
+    </div>
+</div>
+</body>
+</html>
+
+```
+
+`parant()`
+```javascript
+"use strict";
+
+$(document).ready(function() {
+$("#Hello").parent().addClass("red")
+});
+
+```
+
+`parents()`
+This traverses all parents above the selected element
+
+```javascript
+"use strict";
+
+$(document).ready(function() {
+$("#Hello").parents().addClass("red")
+});
+
+```
+
+`parents() select a particular class in parents`
+This traverses all parents above the selected element
+
+```javascript
+"use strict";
+
+$(document).ready(function() {
+$("#Hello").parents(".red").addClass("red")
+});
+
+```
+
+### Siblings
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<style>
+    .red
+    {
+    color: red;
+    }
+</style>
+<body>
+<div>
+    <div class="epicClass">Pizza</div>
+    <div>Fried Chicken</div>
+    <div id="mash">Mash Potatoes</div>
+    <div class="epicClass">Fish Fingers</div>
+    <div>Cookie Dough</div>
+</div>
+</body>
+</html>
+
+```
+
+`All Siblings`
+
+```javascript
+"use strict";
+
+$(document).ready(function() {
+$("#mash").siblings().addClass("red")
+});
+
+```
+
+`Particular Siblings`
+```javascript
+"use strict";
+
+$(document).ready(function() {
+$("#mash").siblings(".epicClass").addClass("red")
+});
+
+```
