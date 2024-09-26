@@ -3504,3 +3504,192 @@ $("#mash").siblings(".epicClass").addClass("red")
 });
 
 ```
+
+### Filtering Elements
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<style>
+    .red
+    {
+    color: red;
+    }
+</style>
+<body>
+<div>Pizza</div>
+<div class="Hello">Fried Chicken</div>
+<div>Waffles and Ice Cream</div>
+<div class="Hello">Fish Fingers</div>
+<div>Mash Potatoes</div>
+</body>
+</html>
+
+```
+
+```javascript
+"use strict";
+
+$(document).ready(function() {
+//select everything
+// $("div").addClass("red")
+
+//select the first item
+// $("div").first().addClass("red")
+
+//select the last item
+// $("div").last().addClass("red")
+
+//select by index
+// $("div").eq(1).addClass("red")
+
+//filter based on condition
+// $("div").filter(".Hello").addClass("red")
+
+//filter not based on condition
+$("div").not(".Hello").addClass("red")
+});
+
+```
+
+
+
+## Effects
+### Show, Hide and Toggle
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<style>
+    .red
+    {
+    color: red;
+    }
+</style>
+<body>
+<div>I love Tuna Pizza</div>
+
+<button id="HideButton">Hide</button>
+<button id="ShowButton">Show</button>
+<button id="ToggleButton">Toggle</button>
+
+<br />
+
+<button id="SlowButton">Slow</button>
+<button id="FastButton">Fast</button>
+
+<br>
+
+<input id="Time" type="text" value="0">
+
+<button id="CustomSpeed">Custom Speed</button>
+</body>
+</html>
+
+```
+
+```javascript
+"use strict";
+
+$(document).ready(function() {
+    $("#HideButton").click(function(){
+        $("div").hide();
+    })
+
+    $("#ShowButton").click(function(){
+        $("div").show();
+    })
+
+    $("#ToggleButton").click(function(){
+        $("div").toggle();
+    })
+
+        $("#SlowButton").click(function(){
+        $("div").toggle("slow");
+    })
+
+    $("#FastButton").click(function(){
+        $("div").toggle("fast");
+    })
+
+    $("#CustomSpeed").click(function(){
+        var time = parseInt($("#Time").val());
+        $("div").toggle(time, function(){
+            console.log("Effect finished");
+        });
+    })
+});
+
+```
+
+### Sliding Using slideDown, slideUp and slideToggle
+`slideDown`
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<style>
+    #Panel, #SlideDownButton, #SlideUpButton, #SlideToggleButton {
+        padding: 5px;
+        text-align: center;
+        background-color: #cccccc;
+        border: solid 1px #c3c3c3;
+    }
+    #Panel
+    {
+        padding: 50px;
+        display: none;
+    }
+</style>
+<body>
+<div id="SlideDownButton">Click to Slide Down</div>
+<div id="Panel">Hello world</div>
+<div id="SlideUpButton">Click to Slide Up</div>
+
+<div id="SlideToggleButton">Slide Toggle</div>
+</body>
+</html>
+
+```
+
+```javascript
+
+"use strict";
+
+$(document).ready(function() {
+ $("#SlideDownButton").click(function(){
+    $("#Panel").slideDown();
+ })
+
+  $("#SlideUpButton").click(function(){
+    $("#Panel").slideUp();
+ })
+
+ $("#SlideToggleButton").click(function(){
+    $("#Panel").slideToggle();
+ })
+
+});
+
+
+```
