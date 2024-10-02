@@ -3694,7 +3694,7 @@ $(document).ready(function() {
 
 ```
 
-## AJAX
+## Chapter 8: AJAX
 ### Load
 
 ```html
@@ -3878,7 +3878,7 @@ $(document).ready(function() {
 
 ```
 
-## Utility Functions 
+## Chapter 9: Utility Functions 
 ### Trim String
 Gets rid of spaces before and after a word. It is used mostly in input form fields.
 
