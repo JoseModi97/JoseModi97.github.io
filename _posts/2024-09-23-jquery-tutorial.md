@@ -3637,7 +3637,7 @@ $(document).ready(function() {
 ```
 
 ### Sliding Using slideDown, slideUp and slideToggle
-`slideDown`
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -3691,5 +3691,240 @@ $(document).ready(function() {
 
 });
 
+
+```
+
+## AJAX
+### Load
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<body>
+<span id="AJAXDiv">Darth Vader</span>
+
+<button id="EpicButton">Click ME!!!</button>
+</body>
+</html>
+
+```
+
+In this case, the txt file is within the same directory as the javascript file. You can also load files from other locations through relative path or url (incase it has been hosted in a local host).
+```javascript
+"use strict";
+
+$(document).ready(function() {
+ $("#EpicButton").click(function(){
+    $("#AJAXDiv").load("textfile.txt")
+ })
+
+
+});
+
+
+```
+
+
+### GETJSON
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<body>
+<button id="EpicButton">Click ME!!!</button>
+</body>
+</html>
+
+```
+
+```json
+{
+    "game": "Half-life 2",
+    "food": "Pizza",
+    "planet": "Earth is ok"
+}
+```
+
+```javascript
+"use strict";
+
+$(document).ready(function() {
+ $("#EpicButton").click(function(){
+    $.getJSON("favourites.json", function(result){
+        console.log(result);
+
+        $.each(result, function(index, value){
+            console.log(`${index} - ${value}`)
+        })
+    })
+ })
+
+
+});
+
+```
+
+### GET Data
+
+index.html
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<body>
+
+    <div>
+        
+    </div>
+<button id="EpicButton">Click ME!!!</button>
+</body>
+</html>
+
+```
+favourites.php
+```php
+<?php
+
+
+echo '<b>Pizza is the best</b>';
+
+```
+
+```javascript
+"use strict";
+
+$(document).ready(function() {
+ $("#EpicButton").click(function(){
+   $.get("favourites.php", function(data, status){
+    console.log(data);
+    $("div").html(data);
+    console.log(status);
+   })
+ })
+
+
+});
+
+```
+
+### POST Data
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<body>
+
+<button id="EpicButton">Click ME!!!</button>
+</body>
+</html>
+
+```
+
+favourites.php (Server)
+```php
+<?php
+
+
+$food = $_POST['food'];
+$game = $_POST['game'];
+
+echo $food . " and " . $game;
+
+```
+
+```javascript
+"use strict";
+
+$(document).ready(function() {
+ $("#EpicButton").click(function(){
+   $.post("favourites.php",{
+    "food" : "pizza",
+    "game": "Half-Life 3"
+   }   ,function(data, status){
+    console.log(data);
+   })
+
+ })
+
+
+});
+
+```
+
+### Utility Functions 
+## Trim String
+Gets rid of spaces before and after a word. It is used mostly in input form fields.
+
+```javascript
+"use strict";
+
+$(document).ready(function() {
+
+   var food = " Pizza is the best ";
+
+   console.log(food);
+   console.log(food.trim());
+
+
+});
+
+```
+
+## Extend
+
+This is a way to merge or combine the values of two different objects into one
+In the parameters, the object that is called first will have all the records merged into it.
+
+```javascript
+"use strict";
+
+$(document).ready(function() {
+
+   var object1 = 
+   {
+    apple: 0,
+    banana: {weight: 52, price: 100},
+    cherry: 97
+   };
+
+   var object2 = {
+    banana: { price: 200},
+    taste: 100
+   };
+   console.log(object1);
+   console.log(object2);
+   $.extend( object1, object2)
+
+   console.log(object1);
+   console.log(object2);
+
+});
 
 ```
