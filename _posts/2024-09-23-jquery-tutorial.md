@@ -3878,8 +3878,8 @@ $(document).ready(function() {
 
 ```
 
-### Utility Functions 
-## Trim String
+## Utility Functions 
+### Trim String
 Gets rid of spaces before and after a word. It is used mostly in input form fields.
 
 ```javascript
@@ -3897,7 +3897,7 @@ $(document).ready(function() {
 
 ```
 
-## Extend
+### Extend
 
 This is a way to merge or combine the values of two different objects into one
 In the parameters, the object that is called first will have all the records merged into it.
@@ -3925,6 +3925,240 @@ $(document).ready(function() {
    console.log(object1);
    console.log(object2);
 
+});
+
+```
+
+### $.inArray()
+
+```javascript
+"use strict";
+
+$(document).ready(function() {
+
+   var epicArray = [34, 27, "Batman","Pizza"];
+//result is 0
+   console.log($.inArray(34, epicArray));
+   //result is 2
+   console.log($.inArray("Batman", epicArray));
+
+   //Check whether Add exists in the array. In this case it doesn't so the result will be -1
+   console.log($.inArray("Add", epicArray));
+
+   //check whether a specific value appears after a particular array element
+   console.log($.inArray("Pizza", epicArray, 2));
+
+});
+
+```
+
+### $.each()
+Iterate over a javascript array
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<body>
+<div></div>
+<button id="EpicButton">Click ME!!!</button>
+</body>
+</html>
+
+```
+
+```javascript
+"use strict";
+
+$(document).ready(function() {
+
+   var array = ["Batman", "Pizza", "Yoda"];
+   var html = '';
+   html += '<ul>'
+   $.each(array, function(index, value){
+    console.log(`${index}: ${value}`);
+    html += '<li>' + value + '</li>';
+   });
+   html += '</ul>'
+   
+   $("#EpicButton").click(function(){
+        $("div").html(html);
+   });
+});
+
+```
+
+### Data Function / Method
+Used to give information about data
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<body>
+<div>
+    My Name is <span></span> 
+    I am <span></span> years old</div>
+
+    <button id="EpicButton">Click Me</button>
+</body>
+</html>
+
+```
+
+
+```javascript
+"use strict";
+
+$(document).ready(function() {
+   $("#EpicButton").click(function(){
+var div = $("div")[0];
+
+   $.data(div, "epic", 
+    {
+        "name": "Frahan",
+        "age": 27
+    }
+   )
+   $("span:first").text($.data(div, "epic"). name)
+   $("span:last").text($.data(div, "epic"). age)
+   })
+});
+
+```
+
+
+### Proxy function
+This is a function that represents certain objects when a particular function is called. this keyword is placed within the function and the content of the object can be accessed
+
+```javascript
+    "use strict";
+
+    $(document).ready(function() {
+    var func = function(){
+        console.log(this);
+    }
+    var object = 
+    {
+        food: "Pizza",
+    }
+
+    var proxyFunction  = $.proxy(func, object);
+
+    proxyFunction();
+    });
+
+```
+### Is Window Function
+
+```javascript
+"use strict";
+
+$(document).ready(function() {
+console.log($.isWindow(window))
+});
+
+```
+
+### Now Epoch Method
+
+```javascript
+    "use strict";
+
+    $(document).ready(function() {
+    var time = $.now();
+    //epoch time, number of seconds since 1st January 1970
+    console.log(time);
+    });
+
+```
+
+### Number Check isNumeric()
+
+checks is provided number is numeric
+
+```javascript
+"use strict";
+
+$(document).ready(function() {
+console.log($.isNumeric(6)) // true
+console.log($.isNumeric("Hello")) // false
+console.log($.isNumeric(-56.835)) // true
+console.log($.isNumeric("67")) // true
+console.log($.isNumeric("67u")) // false
+});
+
+```
+
+### Queue and Dequeue methods
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+<body>
+<div>
+   <div style="background: blue; height: 100px; width: 100px;">
+   </div>
+    <button id="DequeueButton">Click Me</button>
+</body>
+</html>
+
+```
+
+```javascript
+"use strict";
+
+$(document).ready(function() {
+$("#DequeueButton").click(function(){
+    var div = $("div");
+    div.animate({height: 300}, "slow");
+    div.animate({width: 300}, "slow");
+
+    div.queue(function(){
+        div.css("background-color","red")
+        div.dequeue();
+    })
+    div.animate({height: 100}, "slow");
+    div.animate({width: 300}, "slow");
+})
+});
+
+```
+
+### Global Evaluation `$.globalEval()`
+
+This is a function that enables you to access a value defined within a function's scope from anywhere within the code 
+
+```javascript
+"use strict";
+
+$(document).ready(function() {
+    function EpicFunc(){
+        $.globalEval(" var epicVar = 27;");
+
+    }
+
+    EpicFunc()
+    console.log(epicVar);
 });
 
 ```
