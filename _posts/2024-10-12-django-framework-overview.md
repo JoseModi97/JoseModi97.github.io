@@ -1,6 +1,6 @@
 ---
 title: Django Framework Overview
-description:  An Introduction to django framework
+description:  An brief description of what is to come ahead
 author: modi
 date: 2024-10-03 15:59 +0800
 categories: [Django, Introduction]
