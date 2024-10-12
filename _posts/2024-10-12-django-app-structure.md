@@ -2,7 +2,7 @@
 title: Django App Structure
 description:  A Django project is a web application that may consist of one or more sub-modules called apps. 
 author: modi
-date: 2024-10-12 09:29 +0800
+date: 2024-10-12 10:58 +0800
 categories: [Django, Structure]
 tags: [python, django, framework]
 pin: true
