@@ -192,3 +192,7 @@ INSTALLED_APPS = [
 After Performing the steps explained above, run the Django development server and visit `localhost:8000/demo/` in the browser.
 
 ![](https://github.com/JoseModi97/images/blob/main/33db13c2-da62-4a7c-adea-7fb677b5ab71.png){: width="972" height="589" }
+
+Note here that the files present in the app structure are not limited to this reading. The app directory as you will see also consists of other files such as forms.py, serializers.py among others.
+
+In this lesson, you learned to create an app, update the project settings to include it and add a view function.
