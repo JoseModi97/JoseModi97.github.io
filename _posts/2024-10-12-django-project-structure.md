@@ -103,6 +103,8 @@ This command option of manage.py synchronizes the database state with the curre
 
 python manage.py migrate
 
+![](https://github.com/JoseModi97/images/blob/main/80d0b791-b27f-42eb-a366-9e7996b99a48.png?raw=true){: width="972" height="589" }
+
 ### runserver
 
 This command starts Django’s built-in development server on the local machine with IP address 127.0.0.1 and port 8000.  It helps if you don't use this development server in the production environment.
@@ -113,7 +115,7 @@ This command starts Django’s built-in development server on the local machine 
 python manage.py runserver
 ```
 
-![](https://github.com/JoseModi97/images/blob/main/80d0b791-b27f-42eb-a366-9e7996b99a48.png?raw=true){: width="972" height="589" }
+![](https://raw.githubusercontent.com/JoseModi97/images/refs/heads/main/e9b724d8-7e32-4ef6-9551-dece248eda0d.png){: width="972" height="589" }
 
 ### settings.py
 
@@ -139,6 +141,8 @@ Many web application servers implement the WSGI (Web Server Gateway Interface) s
 
 This is a list of strings. Each string represents the path of an app inside the parent project folder. The startproject template installs some apps by default. They appear in the INSTALLED_APPS list. It is located in the settings.py file.
 
+![](https://raw.githubusercontent.com/JoseModi97/images/refs/heads/main/80d0b791-b27f-42eb-a366-9e7996b99a48.png){: width="972" height="589" }
+
 This list must be updated by adding its name whenever a new app is installed.
 
 
@@ -149,7 +153,7 @@ python manage.py startapp demoapp
 
 Then, add the 'demoapp' string inside the INSTALLED_APP list.
 
-
+![](https://github.com/JoseModi97/images/blob/main/1a485d77-d6fe-4f9b-8bbd-a2afd9e172cf.png?raw=true){: width="972" height="589" }
 
 ### Databases
 
