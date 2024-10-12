@@ -57,7 +57,7 @@ wsgi.py
 
 __init__.py
 ```
-
+If you start VS Code in this folder, the file structure appears in its explorer as shown:
 ![](https://raw.githubusercontent.com/JoseModi97/images/refs/heads/main/2ee95324-04c3-42cf-82fa-11f7f233fc0c.png){: width="972" height="589" }
 
 You can see a folder named dproject is created in the Python environment folder. 
@@ -112,6 +112,8 @@ This command starts Django’s built-in development server on the local machine 
 ```bash
 python manage.py runserver
 ```
+
+![](https://github.com/JoseModi97/images/blob/main/80d0b791-b27f-42eb-a366-9e7996b99a48.png?raw=true){: width="972" height="589" }
 
 ### settings.py
 
