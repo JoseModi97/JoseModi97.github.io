@@ -240,3 +240,6 @@ python manage.py runserver
 
 
 On the terminal, you will see IP address: http://127.0.0.1:8000/, hold CTRL and click on it. You should see.....
+
+
+![](https://github.com/JoseModi97/images/blob/main/711bfe5d-39a0-44d1-9180-38124f03d6d4.png?raw=true){: width="972" height="589" }
