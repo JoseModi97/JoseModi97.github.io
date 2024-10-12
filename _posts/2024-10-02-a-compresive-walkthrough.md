@@ -1,5 +1,5 @@
 ---
-title: Navigating The Curriculum
+title: A Comprehensive Walkthrough
 description:  A Comprehensive Walkthrough
 author: modi
 date: 2024-10-03 15:52 +0800
