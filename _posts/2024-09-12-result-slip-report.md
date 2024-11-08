@@ -9,7 +9,7 @@ pin: true
 math: true
 mermaid: true
 ---
-
+## Version 1
 ```php
 <?php
 
@@ -146,4 +146,71 @@ foreach ($results as $row) {
 </body>
 
 </html>
+```
+
+## Version 2
+
+```php
+<?php
+
+use yii\helpers\Html;
+
+// Group results by Programme, then by Level, then by Semester
+$results = $dataProvider->getModels();
+$groupedData = [];
+foreach ($results as $row) {
+    $groupedData[$row['prog_curriculum_desc']][$row['academic_level_name']][$row['semster_name']][] = $row;
+}
+?>
+
+<?php if (!empty($groupedData)): ?>
+    <table border="1" cellspacing="0" cellpadding="5">
+        <thead>
+            <tr>
+                <th>Course Code</th>
+                <th>Course Name</th>
+                <th>Final Mark</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($groupedData as $programme => $levels): ?>
+                <!-- Programme Row -->
+                <tr>
+                    <td colspan="3" style="background-color: #f0f0f0; font-weight: bold;">
+                        Programme: <?= Html::encode($programme) ?>
+                    </td>
+                </tr>
+
+                <?php foreach ($levels as $level => $semesters): ?>
+                    <!-- Level Row -->
+                    <tr>
+                        <td colspan="3" style="background-color: #d0e0f0; padding-left: 20px; font-weight: bold;">
+                            Level: <?= Html::encode($level) ?>
+                        </td>
+                    </tr>
+
+                    <?php foreach ($semesters as $semester => $rows): ?>
+                        <!-- Semester Row -->
+                        <tr>
+                            <td colspan="3" style="background-color: #e0f7d0; padding-left: 40px; font-weight: bold;">
+                                Semester: <?= Html::encode($semester) ?>
+                            </td>
+                        </tr>
+
+                        <?php foreach ($rows as $row): ?>
+                            <!-- Data Row -->
+                            <tr>
+                                <td><?= Html::encode($row['course_code']) ?></td>
+                                <td><?= Html::encode($row['course_name']) ?></td>
+                                <td><?= Html::encode($row['final_mark']) ?></td>
+                            </tr>
+                        <?php endforeach; ?>
+                    <?php endforeach; ?>
+                <?php endforeach; ?>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+<?php else: ?>
+    <p>No results found.</p>
+<?php endif; ?>
 ```
