@@ -11,6 +11,76 @@ mermaid: true
 ---
 
 
+## json to yii2 gridview through dataprovider
+
+```php
+<?php
+
+use yii\data\ArrayDataProvider;
+use yii\grid\GridView;
+use yii\helpers\Html;
+
+$jsonString = '[{"id": 1, "name": "John Doe", "email": "john@example.com"},{"id": 2, "name": "Jane Smith", "email": "jane@example.com"}]';
+
+// Step 1: Decode JSON into an associative array
+$dataArray = json_decode($jsonString, true);
+
+// Step 2: Create an ArrayDataProvider with the decoded data
+$dataProvider = new ArrayDataProvider([
+    'allModels' => $dataArray,
+    'pagination' => [
+        'pageSize' => 10, // Optional: Set the number of items per page
+    ],
+    'sort' => [
+        'attributes' => ['id', 'name', 'email'], // Specify sortable attributes
+    ],
+]);
+
+
+/* @var $dataProvider yii\data\ArrayDataProvider */
+
+echo GridView::widget([
+    'dataProvider' => $dataProvider,
+    'columns' => [
+        // Display a serial number column
+        ['class' => 'yii\grid\SerialColumn'],
+
+        // Display the 'id' column
+        [
+            'attribute' => 'id',
+            'label' => 'ID',
+        ],
+
+        // Display the 'name' column
+        [
+            'attribute' => 'name',
+            'label' => 'Name',
+        ],
+
+        // Display the 'email' column
+        [
+            'attribute' => 'email',
+            'label' => 'Email',
+        ],
+
+        // Action column with default view, update, and delete actions
+        [
+            'class' => 'yii\grid\ActionColumn',
+            'template' => '{view} {update} {delete}', // Customize actions if needed
+            'buttons' => [
+                // Example: custom button
+                'view' => function ($url, $model, $key) {
+                    return Html::a('View', $url);
+                },
+            ],
+        ],
+    ],
+]);
+
+```
+
+
+
 ## Dependent Dropdown Menu
 
 ```php
