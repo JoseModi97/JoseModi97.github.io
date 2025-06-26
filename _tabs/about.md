@@ -20,7 +20,7 @@ I am an experienced System Developer currently working at the University of Nair
 - **Email:** [odhisjoseph85@gmail.com](mailto:odhisjoseph85@gmail.com)
 - **Country:** Kenya
 - **Town:** Nairobi
-- **Age:** 27
+- **Age:** {% assign birth_date = "1997-09-24" | date: "%s" %}{% assign today = "now" | date: "%s" %}{% assign age_seconds = today | minus: birth_date %}{{ age_seconds | divided_by: 31536000 }}
 - **Interests:** Coding
 - **Phone Number:** [+254799213371](tel:+254799213371)
 - **GitHub:** [JoseModi97](https://github.com/JoseModi97)
